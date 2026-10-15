@@ -12,7 +12,7 @@ import {
     DialogTitle,
     DialogDescription,
 } from "@/components/ui/dialog";
-
+ 
 
 const legalLinks = [
 {
