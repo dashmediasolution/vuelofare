@@ -1,6 +1,7 @@
  import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 import Navbar from "./_components/Navbar";
@@ -20,7 +21,7 @@ const SITE_NAME = "Vuelofare";
 
 const GOOGLE_ADS_ID = "AW-18507429014";
 const GA_MEASUREMENT_ID = "G-0PTZER082F";
-const PHONE_CONVERSION_LABEL = "02XMCOX_w5sdEJbpg_lE";
+const PHONE_CONVERSION_ID ="AW-18507429014/02XMCOX_w5sdEJbpg_lE";
 const PHONE_CONVERSION_NUMBER = "(877) 881-0087";
 
 export const metadata: Metadata = {
@@ -121,34 +122,35 @@ export default function RootLayout({
       <body
         className={`${geist.variable} min-h-screen bg-white antialiased`}
       >
-        {/* Google Ads and GA4 shared Google tag */}
+        {/* Google tag (gtag.js) - Google Ads */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
           strategy="afterInteractive"
         />
 
-        <Script id="google-tracking" strategy="afterInteractive">
+        <Script id="google-ads-tag" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments);}
-            window.gtag = gtag;
 
-            gtag('js', new Date());
+            window.gtag = window.gtag || function() {
+              window.dataLayer.push(arguments);
+            };
 
-            // Google Ads
-            gtag('config', '${GOOGLE_ADS_ID}');
+            window.gtag('js', new Date());
 
-            // Google Analytics 4
-            gtag('config', '${GA_MEASUREMENT_ID}');
+            window.gtag('config', '${GOOGLE_ADS_ID}');
+          `}
+        </Script>
 
-            // Google Ads phone call conversion tracking
-            gtag(
-              'config',
-              '${GOOGLE_ADS_ID}/${PHONE_CONVERSION_LABEL}',
-              {
-                phone_conversion_number: '${PHONE_CONVERSION_NUMBER}'
-              }
-            );
+        {/* Google Ads - Phone Call Conversion Tracking */}
+        <Script
+          id="google-phone-conversion"
+          strategy="afterInteractive"
+        >
+          {`
+            window.gtag('config', '${PHONE_CONVERSION_ID}', {
+              phone_conversion_number: '${PHONE_CONVERSION_NUMBER}'
+            });
           `}
         </Script>
 
@@ -160,6 +162,9 @@ export default function RootLayout({
         </main>
 
         <Footer />
+
+        {/* Google tag (gtag.js) - Google Analytics 4 (GA4) */}
+        <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
       </body>
     </html>
   );
