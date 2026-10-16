@@ -125,9 +125,7 @@ export default function CTASection() {
                             sm:text-[16px]
                         "
                     >
-                        Get real help from travel specialists for
-                        reservations, changes, cancellations, and
-                        everything in between.
+                        Get expert travel guidance for your flight plans, airline policies, and travel-related questions. Our team helps you understand your options so you can make informed decisions for your journey.
                     </p>
 
                     {/* CTA */}
@@ -157,7 +155,7 @@ export default function CTASection() {
                                 strokeWidth={2.5}
                             />
 
-                            <span>Call (877) 881-0087</span>
+                            <span>Call +91 87788 10087</span>
                         </Link>
 
                         

@@ -29,7 +29,7 @@ export default function HeroSection() {
 
                     {/* Description */}
                     <p className="mt-5 max-w-[470px] text-[14px] leading-[1.3] text-[#658399] sm:text-[15px] md:text-[1.1rem]">
-                        From changing flights to planning complicated trips, our specialists help you sort out the details and travel with confidence.
+                        Our specialists help you sort out the details and travel with confidence.
                     </p>
 
                     {/* CTA */}
@@ -51,67 +51,7 @@ export default function HeroSection() {
                       
                     </div>
 
-                    {/* Reviews */}
-                    <div className="mt-7 flex items-center gap-3">
-                        {/* Real Avatars */}
-                        <div className="flex -space-x-2">
-                            <div className="relative h-8 w-8 overflow-hidden rounded-full border-2 border-white">
-                                <Image
-                                    src="https://randomuser.me/api/portraits/women/44.jpg"
-                                    alt="Traveler"
-                                    fill
-                                    sizes="32px"
-                                    className="object-cover"
-                                />
-                            </div>
-
-                            <div className="relative h-8 w-8 overflow-hidden rounded-full border-2 border-white">
-                                <Image
-                                    src="https://randomuser.me/api/portraits/men/32.jpg"
-                                    alt="Traveler"
-                                    fill
-                                    sizes="32px"
-                                    className="object-cover"
-                                />
-                            </div>
-
-                            <div className="relative h-8 w-8 overflow-hidden rounded-full border-2 border-white">
-                                <Image
-                                    src="https://randomuser.me/api/portraits/women/68.jpg"
-                                    alt="Traveler"
-                                    fill
-                                    sizes="32px"
-                                    className="object-cover"
-                                />
-                            </div>
-
-                            <div className="relative h-8 w-8 overflow-hidden rounded-full border-2 border-white">
-                                <Image
-                                    src="https://randomuser.me/api/portraits/men/75.jpg"
-                                    alt="Traveler"
-                                    fill
-                                    sizes="32px"
-                                    className="object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Rating */}
-                        <div>
-                            <div className="flex items-center gap-0.5">
-                                {Array.from({ length: 5 }).map((_, index) => (
-                                    <Star
-                                        key={index}
-                                        className="h-4 w-4 fill-[#FFD700] text-[#FFD700]"
-                                    />
-                                ))}
-                            </div>
-
-                            <p className="mt-0.5 text-sm font-medium text-[#618195]">
-                                Trusted by 100,000+ travelers
-                            </p>
-                        </div>
-                    </div>
+                   
                 </div>
 
                 {/* Right Image */}

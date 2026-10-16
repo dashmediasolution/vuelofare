@@ -153,7 +153,16 @@ export default function RootLayout({
             });
           `}
         </Script>
-
+<div className="border-y border-[#dcebea] bg-[#eaf7f6] sticky top-0 z-500  py-3">
+                <p className="mx-auto max-w-full text-center text-xs leading-5 text-[#355c68] sm:text-sm md:text-base">
+                    <strong className="font-bold text-[#073452]">
+                        Disclaimer:
+                    </strong>{" "}
+                    Vuelofare is an independent, third-party travel agency
+                    and is not directly affiliated with, authorized by, or
+                    endorsed by any specific airline. 
+                </p>
+            </div>
         <Navbar />
 
         <main className="min-h-screen">

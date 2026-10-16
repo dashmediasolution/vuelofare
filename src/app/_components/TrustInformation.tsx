@@ -53,11 +53,11 @@ export default function TrustInformation() {
 
                     <div>
                         <h3 className="text-base font-bold text-[#174d63] sm:text-sm md:text-[1.2rem]">
-                            100K+ Happy Travelers
+                            Travel Made Simple
                         </h3>
 
                         <p className="mt-1 text-xs leading-4 text-[#7793a2] sm:text-xs md:text-[0.88rem]">
-                            Real people. Real journeys.
+                            Helpful guidance for every journey.
                         </p>
                     </div>
                 </div>

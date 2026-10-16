@@ -28,22 +28,23 @@ const services: Service[] = [
         icon: <Plane size={22} strokeWidth={2.2} />,
         image: "/images/flight.png",
     },
-    {
-        slug: "flight-changes",
-        title: "Plans Change. We Adapt.",
-        description:
-            "Need to adjust your travel plans? We’ll help update your existing bookings quickly and smoothly.",
-        icon: <RefreshCw size={22} strokeWidth={2.2} />,
-        image: "/images/image_02.png",
-    },
-    {
-        slug: "flight-cancellations",
-        title: "Change of Plans?",
-        description:
-            "Need to cancel your flight? We’ll guide you through the cancellation process and refund options.",
-        icon: <X size={24} strokeWidth={2.2} />,
-        image: "/images/image_01.png",
-    },
+  
+  {
+    slug: "flight-changes",
+    title: "Your Journey, Simplified.",
+    description:
+        "Explore your options and get information to plan your next steps with confidence.",
+    icon: <RefreshCw size={22} strokeWidth={2.2} />,
+    image: "/images/image_02.png",
+},
+   {
+    slug: "flight-cancellations",
+    title: "Travel with Confidence.",
+    description:
+        "Explore airline  policies, applicable fees, fare conditions, and refund options to make informed decisions about your travel plans.",
+    icon: <X size={24} strokeWidth={2.2} />,
+    image: "/images/image_01.png",
+},
     {
         slug: "trip-planning",
         title: "Make Every Trip Count",
@@ -135,8 +136,7 @@ export default function ServicesSection() {
 
                         {/* Description */}
                         <p className="mt-4 max-w-[690px] text-[15px] font-medium leading-[1.65] text-[#7d91aa] sm:text-[17px]">
-                            Whether you're planning a new trip, need to make
-                            changes, or facing unexpected issues, our travel
+                            Whether you're planning a new trip, facing unexpected issues, our travel
                             specialists are ready to help.
                         </p>
                     </div>

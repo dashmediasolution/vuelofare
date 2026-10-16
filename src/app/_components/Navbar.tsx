@@ -41,7 +41,7 @@ export default function Navbar() {
     const [policyOpen, setPolicyOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white">
+        <header className="sticky top-11 z-50 w-full border-b border-slate-100 bg-white">
             <div className="mx-auto flex h-[68px] w-full max-w-[1280px] items-center justify-between px-5 sm:px-8 lg:px-10">
 
                 {/* Logo */}
@@ -93,7 +93,7 @@ export default function Navbar() {
                     </span>
 
                     <span className="font-sans hidden md:flex text-[1.1rem] font-semibold tracking-[1px]">
-                        (877) 881-0087
+                        +91 87788 10087
                     </span>
                 </Link>
 

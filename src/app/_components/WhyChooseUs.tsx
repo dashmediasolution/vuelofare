@@ -31,7 +31,7 @@ const features = [
     {
         icon: Zap,
         title: "Simple, Straightforward Help",
-        description: "Clear help for bookings and travel changes.",
+        description: "Clear help for bookings and travel",
     },
     {
         icon: Users,
@@ -136,7 +136,7 @@ export default function WhyChooseUs() {
                                     fill="currentColor"
                                 />
 
-                              Call Now (877) 881-0087
+                              Call Now  +91 87788 10087
 
                                 <ArrowRight className="h-3.5 w-3.5" />
                             </Link>
