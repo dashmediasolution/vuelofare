@@ -28,11 +28,11 @@ const features = [
         title: "Help When You Need It",
         description: "Get travel assistance whenever you need it.",
     },
-    {
-        icon: Zap,
-        title: "Simple, Straightforward Help",
-        description: "Clear help for bookings and travel",
-    },
+  {
+    icon: Zap,
+    title: "Simple, Straightforward Help",
+    description: "Clear guidance for travel arrangements and related questions.",
+},
     {
         icon: Users,
         title: "Guidance for Your Trip",
@@ -44,10 +44,10 @@ const features = [
         description: "Explore options that suit your journey.",
     },
     {
-        icon: ShieldCheck,
-        title: "Support Beyond Booking",
-        description: "We're here to help before and after you book.",
-    },
+    icon: ShieldCheck,
+    title: "Ongoing Travel Support",
+    description: "We're here to assist you with travel-related questions and concerns.",
+},
 ];
 export default function WhyChooseUs() {
     return (

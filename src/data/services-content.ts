@@ -49,7 +49,7 @@ export const servicesContent: Record<string, ServiceContent> = {
         label: "FLIGHT RESERVATIONS",
 
         description:
-            "Find the right flight for your journey with expert assistance, flexible options, and reliable booking support from start to finish.",
+            "Find the right flight for your journey with expert assistance, flexible options, and reliable reservation support from start to finish.",
 
         heroImage:
             "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=85",
@@ -70,7 +70,7 @@ export const servicesContent: Record<string, ServiceContent> = {
                 description: "Get help choosing the right itinerary.",
             },
             {
-                title: "Easy Booking",
+                title: "Easy reservation",
                 description: "Complete your reservation with confidence.",
             },
         ],
@@ -79,25 +79,25 @@ export const servicesContent: Record<string, ServiceContent> = {
             title: "How does flight reservation assistance work?",
             paragraphs: [
                 "Finding the right flight can take time. Our flight reservation assistance helps you explore suitable travel options based on your destination, preferred dates, timing, and travel requirements.",
-                "Whether you are planning a business trip, family vacation, or last-minute journey, our specialists can help you understand available options and organize your booking details.",
+                "Whether you are planning a business trip, family vacation, or last-minute journey, our specialists can help you understand available options and organize your travel details.",
             ],
             note:
-                "Not sure which flight option works best for you? Our travel specialists can help you review the available choices before you book.",
+                "Not sure which flight option works best for you? Our travel specialists can help you review the available choices before you confirm.",
         },
 
         keyInformation: {
             title: "What We Help You With",
             description:
-                "From comparing flight options to reviewing booking details, we help make the reservation process easier and more organized.",
+                "From comparing flight options to reviewing travel details, we help make the reservation process easier and more organized.",
             items: [
                 "Flight option comparison",
                 "Departure and arrival details",
                 "Travel date and timing assistance",
                 "Passenger information guidance",
-                "Fare and booking information",
+                "Fare and reservation information",
                 "Basic baggage information",
                 "Seat and service information",
-                "Booking confirmation assistance",
+                "travel confirmation assistance",
             ],
         },
 
@@ -119,14 +119,14 @@ export const servicesContent: Record<string, ServiceContent> = {
                 "Flight reservations are subject to airline rules, availability, and the conditions of the selected fare.",
             points: [
                 "Flight availability may vary at any time.",
-                "Fare prices may vary before a booking is completed.",
+                "Fare prices may vary before a reservation is completed.",
                 "Passenger information should match the required travel documents.",
                 "Baggage allowances depend on the selected airline and fare.",
                 "Additional airline services may have separate charges.",
                 "Travel documents and entry requirements remain the traveler's responsibility.",
             ],
             footerText:
-                "For accurate information, review the airline's fare conditions and booking details before completing your reservation.",
+                "For accurate information, review the airline's fare conditions and travel details before completing your reservation.",
         },
 
         relatedServices: [
@@ -144,7 +144,7 @@ export const servicesContent: Record<string, ServiceContent> = {
         label: "FLIGHT ASSISTANCE",
 
         description:
-            "Need help with your flight arrangements? Get professional assistance reviewing available dates, times, routes, and booking details.",
+            "Need help with your flight arrangements? Get professional assistance reviewing available dates, times, routes, and travel details.",
 
         heroImage:
             "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=1400&q=85",
@@ -174,16 +174,16 @@ export const servicesContent: Record<string, ServiceContent> = {
             title: "Need help with your flight?",
             paragraphs: [
                 "Travel plans can shift unexpectedly. Whether your schedule has shifted or you need a different departure time, our flight assistance helps you understand the available options.",
-                "We can help you review alternative flights, understand applicable fare conditions, and organize the information associated with your existing booking.",
+                "We can help you review alternative flights, understand applicable fare conditions, and organize the information associated with your existing reservation.",
             ],
             note:
-                "Applicable fees, fare differences, and availability depend on the airline and fare rules associated with your booking.",
+                "Applicable fees, fare differences, and availability depend on the airline and fare rules associated with your reservation.",
         },
 
         keyInformation: {
             title: "Flight Assistance Services",
             description:
-                "Our team helps you understand available flight options and the requirements associated with your booking.",
+                "Our team helps you understand available flight options and the requirements associated with your reservation.",
             items: [
                 "Travel date assistance",
                 "Departure time assistance",
@@ -192,7 +192,7 @@ export const servicesContent: Record<string, ServiceContent> = {
                 "Reviewing fare conditions",
                 "Available route information",
                 "Passenger information guidance",
-                "Updated booking confirmation",
+                "Updated travel confirmation",
             ],
         },
 
@@ -211,7 +211,7 @@ export const servicesContent: Record<string, ServiceContent> = {
         generalConditions: {
             title: "General Conditions for Flight Assistance",
             description:
-                "Flight arrangements are governed by the airline's fare rules and the conditions attached to your original booking.",
+                "Flight arrangements are governed by the airline's fare rules and the conditions attached to your original reservation.",
             points: [
                 "Requests depend on flight availability.",
                 "Airlines may charge applicable fees depending on the fare.",
@@ -261,18 +261,18 @@ export const servicesContent: Record<string, ServiceContent> = {
             },
             {
                 title: "Helpful Support",
-                description: "Get assistance with your booking questions.",
+                description: "Get assistance with your travel questions.",
             },
         ],
 
         overview: {
             title: "How does flight refund assistance work?",
             paragraphs: [
-                "Refund eligibility depends on the airline, fare type, booking conditions, and the circumstances associated with your reservation.",
+                "Refund eligibility depends on the airline, fare type, reservation conditions, and the circumstances associated with your reservation.",
                 "Our refund assistance service helps you understand the relevant requirements, identify the responsible provider, and gather the information needed for a refund inquiry.",
             ],
             note:
-                "Refund eligibility, applicable deductions, and processing timelines depend on the airline's fare rules and the specific booking.",
+                "Refund eligibility, applicable deductions, and processing timelines depend on the airline's fare rules and the specific reservation.",
         },
 
         keyInformation: {
@@ -294,7 +294,7 @@ export const servicesContent: Record<string, ServiceContent> = {
         confidenceCard: {
             title: "Understand Your Refund Options",
             description:
-                "Get clear information about the terms and requirements associated with your booking.",
+                "Get clear information about the terms and requirements associated with your reservation.",
             items: [
                 "Refund Eligibility",
                 "Fare Conditions",
@@ -306,17 +306,17 @@ export const servicesContent: Record<string, ServiceContent> = {
         generalConditions: {
             title: "General Refund Conditions",
             description:
-                "Refund eligibility and payment terms vary according to the airline, fare type, and booking conditions.",
+                "Refund eligibility and payment terms vary according to the airline, fare type, and reservation conditions.",
             points: [
                 "Some fares may be non-refundable.",
                 "Applicable deductions may depend on the fare rules.",
-                "Refund amounts depend on the booking terms.",
+                "Refund amounts depend on the reservation terms.",
                 "Taxes and fees may be treated differently from the base fare.",
                 "Processing times vary by airline and payment method.",
                 "Airline schedule disruptions may be subject to separate policies.",
             ],
             footerText:
-                "Review the refund conditions associated with your booking and contact the responsible provider for information about your eligibility.",
+                "Review the refund conditions associated with your reservation and contact the responsible provider for information about your eligibility.",
         },
 
         relatedServices: [
@@ -408,7 +408,7 @@ export const servicesContent: Record<string, ServiceContent> = {
                 "Travel documents should be checked before departure.",
                 "Destination entry requirements may apply.",
                 "Weather can affect transportation and activities.",
-                "Travelers should keep booking confirmations accessible.",
+                "Travelers should keep travel confirmations accessible.",
             ],
             footerText:
                 "Planning ahead can help reduce last-minute issues and make it easier to respond to travel updates.",
@@ -475,7 +475,7 @@ export const servicesContent: Record<string, ServiceContent> = {
                 "Connecting flights",
                 "Travel dates",
                 "Destination sequence",
-                "Booking references",
+                "travel references",
                 "Important travel notes",
                 "Trip schedule organization",
             ],
@@ -489,20 +489,20 @@ export const servicesContent: Record<string, ServiceContent> = {
                 "Flight Details",
                 "Connections",
                 "Travel Dates",
-                "Booking Information",
+                "reservation information",
             ],
         },
 
         generalConditions: {
             title: "General Itinerary Conditions",
             description:
-                "Travel schedules and itinerary details may vary according to airline operations and individual booking conditions.",
+                "Travel schedules and itinerary details may vary according to airline operations and individual reservation conditions.",
             points: [
-                "Flight schedules may be updated after booking.",
+                "Flight schedules may be updated after reservation.",
                 "Connection times should be reviewed carefully.",
                 "Travelers should check departure times before travel.",
                 "Airline schedule updates may affect connecting flights.",
-                "Separate bookings may have separate conditions.",
+                "Separate reservations may have separate conditions.",
                 "Travel documents should be kept accessible throughout the journey.",
             ],
             footerText:
@@ -554,7 +554,7 @@ export const servicesContent: Record<string, ServiceContent> = {
             title: "When can travel support help?",
             paragraphs: [
                 "Travel can involve unexpected questions and situations. Having access to reliable assistance can make it easier to understand your options and decide what to do next.",
-                "Our travel support service is designed to help you navigate common travel questions and provide guidance related to your booking and journey.",
+                "Our travel support service is designed to help you navigate common travel questions and provide guidance related to your reservation and journey.",
             ],
             note:
                 "For airline-specific operational decisions, the airline's current policies and instructions remain the final authority.",
@@ -567,7 +567,7 @@ export const servicesContent: Record<string, ServiceContent> = {
             items: [
                 "General travel questions",
                 "Flight information guidance",
-                "Booking information",
+                "reservation information",
                 "Travel schedule assistance",
                 "Flight assistance",
                 "Refund information",
@@ -582,7 +582,7 @@ export const servicesContent: Record<string, ServiceContent> = {
                 "Get practical travel guidance when you need an extra hand.",
             items: [
                 "Travel Questions",
-                "Booking Help",
+                "travel help",
                 "Schedule Guidance",
                 "Trip Assistance",
             ],
@@ -591,7 +591,7 @@ export const servicesContent: Record<string, ServiceContent> = {
         generalConditions: {
             title: "General Travel Support Conditions",
             description:
-                "Travel support provides guidance and assistance based on the information available for your booking.",
+                "Travel support provides guidance and assistance based on the information available for your reservation.",
             points: [
                 "Airline policies may be updated without notice.",
                 "Flight schedules are controlled by the operating airline.",

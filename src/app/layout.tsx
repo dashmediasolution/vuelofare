@@ -28,18 +28,16 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
   title: {
-    default: "Vuelofare | Flight Booking & Travel Assistance",
+    default: "Vuelofare | Flight & Travel Assistance",
     template: "%s | Vuelofare.com",
   },
 
   description:
-    "Get expert assistance with flight bookings,   , baggage information, travel planning, itineraries, and travel support.",
+    "Get expert assistance with flight infromation , baggage information, travel planning, itineraries, and travel support.",
 
   applicationName: SITE_NAME,
 
   keywords: [
-    "flight booking",
-    "flight booking assistance",
     "travel assistance",
       "flight information",
     "baggage assistance",
@@ -74,24 +72,24 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "/",
     siteName: SITE_NAME,
-    title: "Vuelofare.com | Flight Booking & Travel Assistance",
+    title: "Vuelofare.com | Flight  & Travel Assistance",
     description:
-      "Get expert assistance with flight bookings,  baggage information, travel planning, and travel support.",
+      "Get expert assistance with flight ,  baggage information, travel planning, and travel support.",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Vuelofare - Flight Booking and Travel Assistance",
+        alt: "Vuelofare - Flight and Travel Assistance",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Vuelofare | Flight Booking & Travel Assistance",
+    title: "Vuelofare | Flight & Travel Assistance",
     description:
-      "Expert assistance for flight bookings,  travel planning, and travel support.",
+      "Expert assistance for flight infromation ,  travel planning, and travel support.",
     images: ["/images/og-image.jpg"],
   },
 

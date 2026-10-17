@@ -13,29 +13,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 
-const airlinePolicies = [
-    {
-        title: "Flight Change Policy",
-        href: "/airline-policy/flight-change",
-    },
-    {
-        title: "Cancellation Policy",
-        href: "/airline-policy/cancellation",
-    },
-    {
-        title: "Name Change Policy",
-        href: "/airline-policy/name-change",
-    },
-    {
-        title: "Baggage Policy",
-        href: "/airline-policy/baggage",
-    },
-    {
-        title: "Pet Policy",
-        href: "/airline-policy/pet-travel",
-    },
-];
-
+ 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [policyOpen, setPolicyOpen] = useState(false);

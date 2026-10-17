@@ -35,7 +35,7 @@ export default function CallUsDialog() {
                     </DialogTitle>
 
                     <DialogDescription className="max-w-sm text-center leading-6">
-                        Our travel experts are ready to help you with bookings,
+                        Our travel experts are ready to help you with flight information,
                         and travel assistance.
                     </DialogDescription>
                 </DialogHeader>

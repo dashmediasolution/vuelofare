@@ -1,4 +1,3 @@
-
 export interface AirlinePolicyFAQ {
     question: string;
     answer: string;
@@ -30,7 +29,7 @@ export const airlinePolicyContent: Record<string, AirlinePolicyContent> = {
             {
                 title: "Understanding Name Corrections",
                 content:
-                    "Airline name correction rules vary by carrier and ticket type. Minor spelling corrections and legal name changes may follow different procedures.",
+                    "Airline name correction rules vary by carrier and ticket type. Minor spelling corrections and legal name updates may follow different procedures.",
                 bullets: [
                     "Review the passenger name printed on your ticket.",
                     "Check the airline's requirements before requesting a correction.",
@@ -62,7 +61,7 @@ export const airlinePolicyContent: Record<string, AirlinePolicyContent> = {
             {
                 question: "What documents might be required?",
                 answer:
-                    "Depending on the airline and type of correction, you may need identification or legal documents supporting the requested change.",
+                    "Depending on the airline and type of correction, you may need identification or legal documents supporting the requested update.",
             },
         ],
     },
@@ -89,7 +88,7 @@ export const airlinePolicyContent: Record<string, AirlinePolicyContent> = {
                 content:
                     "Checked baggage allowances depend on your airline, destination, fare conditions, and ticket type. Additional charges may apply when baggage exceeds the permitted allowance.",
                 bullets: [
-                    "Review the baggage allowance shown on your booking.",
+                    "Review the baggage allowance shown in your travel details.",
                     "Check excess baggage fees before departure.",
                     "Label your bags with your contact information.",
                 ],
@@ -109,7 +108,7 @@ export const airlinePolicyContent: Record<string, AirlinePolicyContent> = {
             {
                 question: "How much baggage can I bring?",
                 answer:
-                    "Your allowance depends on the airline, route, fare type, and cabin class. Check your booking confirmation or the airline's official baggage policy.",
+                    "Your allowance depends on the airline, route, fare type, and cabin class. Check your travel confirmation or the airline's official baggage policy.",
             },
             {
                 question: "Can I purchase additional baggage?",
@@ -136,7 +135,7 @@ export const airlinePolicyContent: Record<string, AirlinePolicyContent> = {
                 content:
                     "Airlines have different requirements for transporting pets in the cabin or in the aircraft hold. Approval may depend on the animal, route, aircraft, and available capacity.",
                 bullets: [
-                    "Contact the airline before booking or traveling.",
+                    "Contact the airline before making travel arrangements.",
                     "Confirm whether your pet can travel in the cabin or hold.",
                     "Check carrier size, weight, and ventilation requirements.",
                 ],
@@ -152,7 +151,7 @@ export const airlinePolicyContent: Record<string, AirlinePolicyContent> = {
                 ],
             },
             {
-                title: "Booking and Preparation",
+                title: "Advance Arrangements and Preparation",
                 content:
                     "Pet travel spaces may be limited, and advance approval may be required. Prepare your pet's carrier according to the airline's instructions.",
                 bullets: [

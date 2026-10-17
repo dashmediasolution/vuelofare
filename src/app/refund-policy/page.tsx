@@ -1,5 +1,5 @@
  import type { Metadata } from "next";
-import { LegalPageLayout , LegalSection } from "@/app/_components/legal-page-layout";
+import { LegalPageLayout, LegalSection } from "@/app/_components/legal-page-layout";
 
 export const metadata: Metadata = {
     title: "Refund Policy | Vuelofare",
@@ -24,20 +24,21 @@ export default function RefundPolicyPage() {
                 </p>
             </LegalSection>
 
-            <LegalSection title="2. Airline tickets and third-party bookings">
+            <LegalSection title="2. Airline tickets and third-party travel arrangements">
                 <p>
-                    If a booking is made directly with an airline or another
-                    travel provider, that provider’s applicable terms and
-                    refund procedures generally apply. Contact the provider
-                    or the seller identified on your booking confirmation to
-                    determine who is responsible for processing your refund.
+                    If a travel arrangement is made directly with an airline
+                    or another travel provider, that provider’s applicable
+                    terms and refund procedures generally apply. Contact the
+                    provider or the seller identified in your travel
+                    confirmation to determine who is responsible for
+                    processing your refund.
                 </p>
 
                 <p>
-                    Vuelofare cannot guarantee a refund for a booking that it
-                    did not sell or process. Refund eligibility and approval
-                    depend on the responsible seller, provider, and applicable
-                    terms.
+                    Vuelofare cannot guarantee a refund for a transaction
+                    that it did not sell or process. Refund eligibility and
+                    approval depend on the responsible seller, provider,
+                    and applicable terms.
                 </p>
             </LegalSection>
 
@@ -56,9 +57,8 @@ export default function RefundPolicyPage() {
                 <p>
                     To inquire about a refund, contact our support team using
                     the details provided on the Contact Us page. Include the
-                    relevant booking or transaction reference, the email
-                    address associated with the transaction, and a brief
-                    description of your request.
+                    transaction reference, the email address associated with
+                    the transaction, and a brief description of your request.
                 </p>
 
                 <p>

@@ -88,12 +88,7 @@ export default function Footer() {
                     UDYAM-DL-11-0130681
                 </p>
 
-                <p className="break-words text-[#718b9b]">
-                    <span className="block font-semibold text-[#355c68]">
-                        Certificate No.
-                    </span>
-                    IN-DLBB4800076829X
-                </p>
+          
 
                 <p className="break-words text-[#718b9b]">
                     <span className="block font-semibold text-[#355c68]">

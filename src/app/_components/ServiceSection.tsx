@@ -24,7 +24,7 @@ const services: Service[] = [
         slug: "flight-reservations",
         title: "Your Journey Starts Here",
         description:
-            "Find and book the right flights for your trip with expert guidance and reliable assistance.",
+            "Find flights for your trip with expert guidance and reliable assistance.",
         icon: <Plane size={22} strokeWidth={2.2} />,
         image: "/images/flight.png",
     },

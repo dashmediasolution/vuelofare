@@ -97,7 +97,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <p>
                     Our privacy disclosures should reflect the actual
-                    third-party analytics, advertising, booking, payment, or
+                    third-party analytics, advertising,  payment, or
                     communications providers used on the website.
                 </p>
             </LegalSection>
