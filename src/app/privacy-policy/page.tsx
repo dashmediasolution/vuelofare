@@ -10,8 +10,14 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <LegalPageLayout eyebrow="Privacy" title="Privacy Policy" description="This page explains the types of information that may be handled when you visit Vuelofare or contact us.">
-      <LegalSection title="1. About this policy"><p>This Privacy Policy applies to your use of the Vuelofare website. It is a general template and must be updated to reflect the technologies, forms, analytics tools, advertising services, and business operations actually used on the site.</p></LegalSection>
-      <LegalSection title="2. Information you provide"><p>If you contact us or submit a form, we may receive the information you choose to provide, such as your name, email address, phone number, message, and details relevant to your inquiry. Please do not submit passwords, payment-card information, government identification numbers, or other sensitive information through a general inquiry form.</p></LegalSection>
+<LegalSection title="1. About this policy">
+    <p>
+        This Privacy Policy explains how Vuelofare collects, uses, stores,
+        and protects your personal information when you visit or use our
+        website and services.
+    </p>
+</LegalSection>  
+    <LegalSection title="2. Information you provide"><p>If you contact us , we may receive the information you choose to provide, such as your name, email address, phone number, message, and details relevant to your inquiry. Please do not submit passwords, payment-card information, government identification numbers, or other sensitive information through a general inquiry form.</p></LegalSection>
       <LegalSection title="3. Information collected automatically"><p>Like many websites, Vuelofare may process technical information such as browser type, device information, pages visited, approximate usage timestamps, referring pages, and basic diagnostic logs. Whether this information is collected depends on the hosting, security, analytics, and other tools enabled on the website.</p></LegalSection>
       <LegalSection title="4. How information may be used"><p>Information may be used, where applicable, to:</p><ul className="list-disc space-y-2 pl-6"><li>Respond to inquiries and provide requested information.</li><li>Operate, maintain, troubleshoot, and secure the website.</li><li>Understand website usage and improve content and usability.</li><li>Detect abuse, spam, fraud, or technical problems.</li><li>Meet applicable legal obligations and protect legitimate rights.</li></ul><p>Only retain and use information for purposes that are relevant to the actual operation of the website and permitted by applicable law.</p></LegalSection>
       <LegalSection title="5. Cookies and similar technologies"><p>The website or its service providers may use cookies or similar technologies for essential functions, preferences, analytics, or advertising if those features are enabled. Configure this section to match the actual tools in use. You can manage cookies through your browser settings, although disabling some cookies may affect website functionality.</p></LegalSection>

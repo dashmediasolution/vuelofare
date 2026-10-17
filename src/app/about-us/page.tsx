@@ -16,7 +16,7 @@ export default function AboutUsPage() {
       </LegalSection>
       <LegalSection title="What you can expect">
         <p>Depending on the features currently available on the website, visitors may find general travel information, trip-planning resources, or ways to submit an inquiry. The availability of any specific service should be confirmed on the relevant page before you rely on it.</p>
-        <p>Unless a service is expressly described and confirmed, do not assume that Vuelofare issues airline tickets, changes reservations, cancels bookings, or processes refunds directly.</p>
+        <p>Unless a service is expressly described and confirmed, do not assume that Vuelofare issues airline tickets, changes reservations, or processes refunds directly.</p>
       </LegalSection>
       <LegalSection title="Independent website">
         <p>Vuelofare is presented as an independent travel website. Airline names, logos, trademarks, and other third-party names belong to their respective owners. References to third parties are for identification or informational purposes and do not, by themselves, imply a partnership, sponsorship, authorization, or endorsement.</p>

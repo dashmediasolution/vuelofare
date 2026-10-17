@@ -4,7 +4,6 @@ export interface ServiceContent {
     shortTitle: string;
     label: string;
     description: string;
-
     heroImage: string;
     overviewImage: string;
     conditionsImage: string;
@@ -117,35 +116,35 @@ export const servicesContent: Record<string, ServiceContent> = {
         generalConditions: {
             title: "General Conditions for Flight Reservations",
             description:
-                "Flight reservations are subject to the rules, availability, and conditions of the airline and selected fare.",
+                "Flight reservations are subject to airline rules, availability, and the conditions of the selected fare.",
             points: [
-                "Flight availability may change at any time.",
-                "Fare prices can change before a booking is completed.",
+                "Flight availability may vary at any time.",
+                "Fare prices may vary before a booking is completed.",
                 "Passenger information should match the required travel documents.",
                 "Baggage allowances depend on the selected airline and fare.",
                 "Additional airline services may have separate charges.",
                 "Travel documents and entry requirements remain the traveler's responsibility.",
             ],
             footerText:
-                "For the most accurate information, always review the airline's fare conditions and booking details before completing your reservation.",
+                "For accurate information, review the airline's fare conditions and booking details before completing your reservation.",
         },
 
         relatedServices: [
-            "flight-changes",
-            "flight-cancellations",
+            "flight-assistance",
+            "refund-assistance",
             "trip-planning",
             "itinerary-assistance",
         ],
     },
 
-    "flight-changes": {
-        slug: "flight-changes",
-        title: "Flight Changes",
-        shortTitle: "Flight Changes",
-        label: "FLIGHT CHANGES",
+    "flight-assistance": {
+        slug: "flight-assistance",
+        title: "Flight Assistance",
+        shortTitle: "Flight Assistance",
+        label: "FLIGHT ASSISTANCE",
 
         description:
-            "Plans changed? Get assistance with modifying your flight dates, times, routes, and other booking details.",
+            "Need help with your flight arrangements? Get professional assistance reviewing available dates, times, routes, and booking details.",
 
         heroImage:
             "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?auto=format&fit=crop&w=1400&q=85",
@@ -158,12 +157,12 @@ export const servicesContent: Record<string, ServiceContent> = {
 
         heroPoints: [
             {
-                title: "Flexible Changes",
+                title: "Flexible Options",
                 description: "Review available flight alternatives.",
             },
             {
                 title: "Clear Guidance",
-                description: "Understand applicable change conditions.",
+                description: "Understand applicable fare conditions.",
             },
             {
                 title: "Smooth Assistance",
@@ -172,75 +171,75 @@ export const servicesContent: Record<string, ServiceContent> = {
         ],
 
         overview: {
-            title: "Need to change your flight?",
+            title: "Need help with your flight?",
             paragraphs: [
-                "Travel plans can change unexpectedly. Whether your schedule has shifted or you need a different departure time, our flight change assistance helps you understand the available options.",
-                "We can help you review alternative flights, understand applicable fare conditions, and organize the information needed to make a change to your existing booking.",
+                "Travel plans can shift unexpectedly. Whether your schedule has shifted or you need a different departure time, our flight assistance helps you understand the available options.",
+                "We can help you review alternative flights, understand applicable fare conditions, and organize the information associated with your existing booking.",
             ],
             note:
-                "Change fees, fare differences, and availability depend on the airline and fare rules associated with your booking.",
+                "Applicable fees, fare differences, and availability depend on the airline and fare rules associated with your booking.",
         },
 
         keyInformation: {
-            title: "Flight Changes We Can Help With",
+            title: "Flight Assistance Services",
             description:
-                "We can guide you through common flight modification requests and help you understand what may be required.",
+                "Our team helps you understand available flight options and the requirements associated with your booking.",
             items: [
-                "Changing travel dates",
-                "Changing departure times",
+                "Travel date assistance",
+                "Departure time assistance",
                 "Reviewing alternative flights",
                 "Understanding fare differences",
-                "Checking change conditions",
-                "Reviewing available routes",
+                "Reviewing fare conditions",
+                "Available route information",
                 "Passenger information guidance",
                 "Updated booking confirmation",
             ],
         },
 
         confidenceCard: {
-            title: "Change Plans with Confidence",
+            title: "Travel with Confidence",
             description:
-                "Understand your options before making changes to your booking.",
+                "Understand your options before confirming your flight arrangements.",
             items: [
-                "New Travel Dates",
+                "Travel Dates",
                 "Alternative Flights",
                 "Fare Differences",
-                "Change Conditions",
+                "Fare Conditions",
             ],
         },
 
         generalConditions: {
-            title: "General Conditions for Flight Changes",
+            title: "General Conditions for Flight Assistance",
             description:
-                "Flight changes are governed by the airline's fare rules and the conditions attached to your original booking.",
+                "Flight arrangements are governed by the airline's fare rules and the conditions attached to your original booking.",
             points: [
-                "Changes are subject to flight availability.",
-                "Airlines may charge change fees depending on the fare.",
-                "A fare difference may apply when selecting a new flight.",
-                "Some fares may have restrictions on changes.",
-                "Changes must be completed before the applicable airline deadline.",
-                "The final cost depends on the airline and selected flight.",
+                "Requests depend on flight availability.",
+                "Airlines may charge applicable fees depending on the fare.",
+                "A fare difference may apply when selecting another flight.",
+                "Some fares may have specific restrictions.",
+                "Requests must be submitted before the applicable airline deadline.",
+                "The final cost depends on the airline and selected itinerary.",
             ],
             footerText:
-                "Before changing your booking, review the applicable airline conditions and the total amount payable for the new itinerary.",
+                "Before confirming your flight arrangements, review the applicable airline conditions and the total amount payable for the selected itinerary.",
         },
 
         relatedServices: [
             "flight-reservations",
-            "flight-cancellations",
+            "refund-assistance",
             "itinerary-assistance",
             "travel-support",
         ],
     },
 
-    "flight-cancellations": {
-        slug: "flight-cancellations",
-        title: "Flight Cancellations",
-        shortTitle: "Flight Cancellations",
-        label: "FLIGHT CANCELLATIONS",
+    "refund-assistance": {
+        slug: "refund-assistance",
+        title: "Refund Assistance",
+        shortTitle: "Refund Assistance",
+        label: "REFUND ASSISTANCE",
 
         description:
-            "Need to cancel your flight? Get clear guidance on cancellation procedures, fare conditions, and possible refund options.",
+            "Need information about a flight refund? Get clear guidance on refund eligibility, applicable fare conditions, and estimated processing timelines.",
 
         heroImage:
             "https://images.unsplash.com/photo-1517400508447-f8dd518b86db?auto=format&fit=crop&w=1400&q=85",
@@ -253,76 +252,76 @@ export const servicesContent: Record<string, ServiceContent> = {
 
         heroPoints: [
             {
-                title: "Clear Process",
-                description: "Understand the cancellation steps.",
+                title: "Clear Information",
+                description: "Understand the applicable refund process.",
             },
             {
                 title: "Refund Guidance",
-                description: "Review possible refund conditions.",
+                description: "Review possible refund eligibility.",
             },
             {
                 title: "Helpful Support",
-                description: "Get assistance when plans change.",
+                description: "Get assistance with your booking questions.",
             },
         ],
 
         overview: {
-            title: "What happens when you cancel a flight?",
+            title: "How does flight refund assistance work?",
             paragraphs: [
-                "Cancelling a flight can involve different rules depending on the airline, fare type, booking conditions, and time of cancellation.",
-                "Our cancellation assistance helps you understand the available process and the information you may need before proceeding with your request.",
+                "Refund eligibility depends on the airline, fare type, booking conditions, and the circumstances associated with your reservation.",
+                "Our refund assistance service helps you understand the relevant requirements, identify the responsible provider, and gather the information needed for a refund inquiry.",
             ],
             note:
-                "Refund eligibility and cancellation charges depend on the airline's fare rules and the specific booking.",
+                "Refund eligibility, applicable deductions, and processing timelines depend on the airline's fare rules and the specific booking.",
         },
 
         keyInformation: {
-            title: "Cancellation & Refund Information",
+            title: "Flight Refund Information",
             description:
-                "Before cancelling your flight, it is important to understand the conditions that may affect your refund.",
+                "Understand the important details that may affect the amount and timing of a potential refund.",
             items: [
-                "Cancellation procedure",
                 "Refund eligibility",
-                "Cancellation charges",
+                "Applicable fare conditions",
+                "Refund amount information",
                 "Fare restrictions",
-                "Refund timelines",
-                "Airline cancellation conditions",
+                "Estimated refund timelines",
+                "Airline refund requirements",
                 "Taxes and applicable fees",
-                "Booking cancellation confirmation",
+                "Refund request assistance",
             ],
         },
 
         confidenceCard: {
-            title: "Cancel with Confidence",
+            title: "Understand Your Refund Options",
             description:
-                "Understand the important details before cancelling your reservation.",
+                "Get clear information about the terms and requirements associated with your booking.",
             items: [
-                "Cancellation Rules",
                 "Refund Eligibility",
+                "Fare Conditions",
                 "Applicable Fees",
-                "Refund Timeline",
+                "Processing Timeline",
             ],
         },
 
         generalConditions: {
-            title: "General Conditions for Flight Cancellations",
+            title: "General Refund Conditions",
             description:
-                "Cancellation and refund conditions vary according to the airline, fare type, and booking terms.",
+                "Refund eligibility and payment terms vary according to the airline, fare type, and booking conditions.",
             points: [
                 "Some fares may be non-refundable.",
-                "Cancellation charges may apply.",
-                "Refund amounts depend on the fare rules.",
+                "Applicable deductions may depend on the fare rules.",
+                "Refund amounts depend on the booking terms.",
                 "Taxes and fees may be treated differently from the base fare.",
-                "Refund processing times vary by airline and payment method.",
-                "Airline schedule changes may have different cancellation conditions.",
+                "Processing times vary by airline and payment method.",
+                "Airline schedule disruptions may be subject to separate policies.",
             ],
             footerText:
-                "Always review the cancellation and refund conditions associated with your booking before confirming a cancellation.",
+                "Review the refund conditions associated with your booking and contact the responsible provider for information about your eligibility.",
         },
 
         relatedServices: [
             "flight-reservations",
-            "flight-changes",
+            "flight-assistance",
             "travel-support",
             "itinerary-assistance",
         ],
@@ -402,9 +401,9 @@ export const servicesContent: Record<string, ServiceContent> = {
         generalConditions: {
             title: "General Trip Planning Considerations",
             description:
-                "Travel plans should be reviewed carefully because schedules, availability, and destination conditions can change.",
+                "Travel plans should be reviewed carefully because schedules, availability, and destination conditions may vary.",
             points: [
-                "Transportation availability may change.",
+                "Transportation availability may vary.",
                 "Flight and hotel prices can vary over time.",
                 "Travel documents should be checked before departure.",
                 "Destination entry requirements may apply.",
@@ -412,13 +411,13 @@ export const servicesContent: Record<string, ServiceContent> = {
                 "Travelers should keep booking confirmations accessible.",
             ],
             footerText:
-                "Planning ahead can help reduce last-minute issues and make it easier to respond when travel arrangements change.",
+                "Planning ahead can help reduce last-minute issues and make it easier to respond to travel updates.",
         },
 
         relatedServices: [
             "flight-reservations",
             "itinerary-assistance",
-            "flight-changes",
+            "flight-assistance",
             "travel-support",
         ],
     },
@@ -463,7 +462,7 @@ export const servicesContent: Record<string, ServiceContent> = {
                 "Our itinerary assistance helps you review the important parts of your journey so you can keep your travel schedule clear and organized.",
             ],
             note:
-                "Keeping an updated itinerary can make it easier to manage your journey and respond to schedule changes.",
+                "Keeping an updated itinerary can make it easier to manage your journey and stay informed about schedule updates.",
         },
 
         keyInformation: {
@@ -497,23 +496,23 @@ export const servicesContent: Record<string, ServiceContent> = {
         generalConditions: {
             title: "General Itinerary Conditions",
             description:
-                "Travel schedules and itinerary details can change according to airline operations and individual booking conditions.",
+                "Travel schedules and itinerary details may vary according to airline operations and individual booking conditions.",
             points: [
-                "Flight schedules may change after booking.",
+                "Flight schedules may be updated after booking.",
                 "Connection times should be reviewed carefully.",
                 "Travelers should check departure times before travel.",
-                "Airline schedule changes may affect connecting flights.",
+                "Airline schedule updates may affect connecting flights.",
                 "Separate bookings may have separate conditions.",
                 "Travel documents should be kept accessible throughout the journey.",
             ],
             footerText:
-                "Review your itinerary before departure and check with the airline for any last-minute schedule updates.",
+                "Review your itinerary before departure and check with the airline for the latest schedule information.",
         },
 
         relatedServices: [
             "trip-planning",
             "flight-reservations",
-            "flight-changes",
+            "flight-assistance",
             "travel-support",
         ],
     },
@@ -547,14 +546,14 @@ export const servicesContent: Record<string, ServiceContent> = {
             },
             {
                 title: "Peace of Mind",
-                description: "Know where to turn when plans change.",
+                description: "Know where to turn when you need assistance.",
             },
         ],
 
         overview: {
             title: "When can travel support help?",
             paragraphs: [
-                "Travel can involve unexpected questions, changes, and situations. Having access to reliable assistance can make it easier to understand your options and decide what to do next.",
+                "Travel can involve unexpected questions and situations. Having access to reliable assistance can make it easier to understand your options and decide what to do next.",
                 "Our travel support service is designed to help you navigate common travel questions and provide guidance related to your booking and journey.",
             ],
             note:
@@ -570,8 +569,8 @@ export const servicesContent: Record<string, ServiceContent> = {
                 "Flight information guidance",
                 "Booking information",
                 "Travel schedule assistance",
-                "Flight change guidance",
-                "Cancellation information",
+                "Flight assistance",
+                "Refund information",
                 "Itinerary assistance",
                 "General travel preparation",
             ],
@@ -592,12 +591,12 @@ export const servicesContent: Record<string, ServiceContent> = {
         generalConditions: {
             title: "General Travel Support Conditions",
             description:
-                "Travel support is intended to provide guidance and assistance based on the information available for your booking.",
+                "Travel support provides guidance and assistance based on the information available for your booking.",
             points: [
-                "Airline policies can change without notice.",
+                "Airline policies may be updated without notice.",
                 "Flight schedules are controlled by the operating airline.",
                 "Final airline decisions remain subject to airline rules.",
-                "Availability and pricing can change at any time.",
+                "Availability and pricing may vary at any time.",
                 "Travelers remain responsible for valid travel documents.",
                 "Some requests may require direct communication with the airline.",
             ],
@@ -607,8 +606,8 @@ export const servicesContent: Record<string, ServiceContent> = {
 
         relatedServices: [
             "flight-reservations",
-            "flight-changes",
-            "flight-cancellations",
+            "flight-assistance",
+            "refund-assistance",
             "itinerary-assistance",
         ],
     },

@@ -47,8 +47,7 @@ export function LegalPageLayout({
           <div className="mb-8 flex gap-3 rounded-xl border border-teal-100 bg-teal-50 p-4">
             <ShieldCheck className="mt-0.5 shrink-0 text-[#159b9c]" size={22} />
             <p className="text-sm leading-6 text-slate-700">
-              Please read this page carefully. This is a general policy template and must be checked against Vuelofare&apos;s actual business practices before publication.
-            </p>
+Please review this  carefully to understand Vuelofare’s policies, terms, and procedures.            </p>
           </div>
           <div className="space-y-9">{children}</div>
         </article>

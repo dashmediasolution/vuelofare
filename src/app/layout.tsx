@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Get expert assistance with flight bookings, flight changes, cancellations, baggage information, travel planning, itineraries, and travel support.",
+    "Get expert assistance with flight bookings,   , baggage information, travel planning, itineraries, and travel support.",
 
   applicationName: SITE_NAME,
 
@@ -41,9 +41,7 @@ export const metadata: Metadata = {
     "flight booking",
     "flight booking assistance",
     "travel assistance",
-    "flight changes",
-    "flight cancellation",
-    "flight information",
+      "flight information",
     "baggage assistance",
     "travel planning",
     "international flights",
@@ -78,7 +76,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: "Vuelofare.com | Flight Booking & Travel Assistance",
     description:
-      "Get expert assistance with flight bookings, flight changes, cancellations, baggage information, travel planning, and travel support.",
+      "Get expert assistance with flight bookings,  baggage information, travel planning, and travel support.",
     images: [
       {
         url: "/images/og-image.jpg",
@@ -93,7 +91,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vuelofare | Flight Booking & Travel Assistance",
     description:
-      "Expert assistance for flight bookings, changes, cancellations, travel planning, and travel support.",
+      "Expert assistance for flight bookings,  travel planning, and travel support.",
     images: ["/images/og-image.jpg"],
   },
 
