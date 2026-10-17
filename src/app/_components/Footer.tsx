@@ -56,7 +56,7 @@ export default function Footer() {
 
                 <div className="min-w-0">
                     <p className="break-words text-sm font-medium leading-6 text-[#718b9b]">
-                        B-16 S/F R/SIDE, Janakpuri Community Centre,
+                        B-16 S/F R/Side, Janakpuri Community Centre,
                         Janakpuri, New Delhi – 110058
                     </p>
 
@@ -135,8 +135,8 @@ export default function Footer() {
             </p>
 
             <Link
-                href="tel:+918778810087"
-                aria-label="Call Vuelofare at +91 87788 10087"
+                href="tel:+919667301134"
+                aria-label="Call Vuelofare at +91 96673 01134"
                 className="mt-4 inline-flex max-w-full items-center gap-2 rounded-xl bg-[#e8f7f6] px-3 py-3 font-semibold text-[#073452] transition-colors hover:bg-[#d9f0ee]"
             >
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#159b9c]">
@@ -148,7 +148,7 @@ export default function Footer() {
                         Call Us
                     </span>
                     <span className="block break-words text-sm font-semibold">
-                        +91 87788 10087
+                        +91 96673 01134
                     </span>
                 </span>
             </Link>

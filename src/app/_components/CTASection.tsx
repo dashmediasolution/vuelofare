@@ -131,7 +131,7 @@ export default function CTASection() {
                     {/* CTA */}
                     <div className="relative z-10 mt-8 flex flex-wrap items-center gap-4">
                         <Link
-                            href="tel:8778810087"
+                            href="tel:+919667301134"
                             className="
                                 inline-flex
                                 h-13
@@ -155,7 +155,7 @@ export default function CTASection() {
                                 strokeWidth={2.5}
                             />
 
-                            <span>Call +91 87788 10087</span>
+                            <span>Call +91 96673 01134</span>
                         </Link>
 
                         

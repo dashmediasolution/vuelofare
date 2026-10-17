@@ -41,8 +41,8 @@ export default function CallUsDialog() {
                 </DialogHeader>
 
                 <div className="mt-4">
-                    <Link
-                        href="tel:8778810087"
+                    <Link 
+                        href="tel:9667301134"
                         onClick={() => setOpen(false)}
                         className="flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#2FC2B0] text-base font-semibold text-white transition-colors hover:bg-[#26ad9d]"
                     >

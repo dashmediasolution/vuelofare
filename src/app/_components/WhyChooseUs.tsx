@@ -130,13 +130,13 @@ export default function WhyChooseUs() {
                                 sm:text-[13px]
                             "
                         >
-                            <Link href="tel:8778810087" className="flex gap-3 text-base">
+                            <Link href="tel:9667301134" className="flex gap-3 text-base">
                                 <Phone
                                     className="h-3.5 w-3.5"
                                     fill="currentColor"
                                 />
 
-                              Call Now  +91 87788 10087
+                              Call Now  +91 96673 01134
 
                                 <ArrowRight className="h-3.5 w-3.5" />
                             </Link>

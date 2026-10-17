@@ -8,7 +8,7 @@ const legalLinks = [
   { href: "/terms-and-conditions", label: "Terms & Conditions" },
   { href: "/refund-policy", label: "Refund Policy" },
   { href: "/contact-us", label: "Contact Us" },
-  { href: "/disclaimer", label: "Disclaimer" },
+
 ];
 
 type LegalPageLayoutProps = {
