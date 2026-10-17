@@ -1,5 +1,5 @@
  import type { Metadata } from "next";
-import { LegalPageLayout, LegalSection } from "../_components/legal-page-layout";
+import { LegalPageLayout , LegalSection } from "@/app/_components/legal-page-layout";
 
 export const metadata: Metadata = {
     title: "Refund Policy | Vuelofare",
