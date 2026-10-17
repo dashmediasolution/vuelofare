@@ -17,7 +17,7 @@ const steps: HowItWorksStep[] = [
     {
         title: "Reach Out",
         description:
-            "Call +91 96673 01134 or connect with our travel specialists and speak with someone right away.",
+            "Call +1 (877) 881-0087 or connect with our travel specialists and speak with someone right away.",
         icon: <Phone size={24} strokeWidth={2.2} />,
     },
     {

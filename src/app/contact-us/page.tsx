@@ -25,10 +25,10 @@ export default function ContactUsPage() {
         <div className="rounded-xl border border-slate-200 p-5">
           <Phone className="mb-3 text-[#159b9c]" size={24} />
           <h2 className="font-bold text-slate-900">Phone</h2>
-          <p className="mt-2 text-lg text-slate-600">{"+91 96673 01134"}
+          <p className="mt-2 text-lg text-slate-600">{"+1 (877) 881-0087"}
           </p>
         
-            <a className="mt-3 inline-block text-base font-bold text-[#087f81] underline" href={`tel:+919667301134`}>
+            <a className="mt-3 inline-block text-base font-bold text-[#087f81] underline" href={`tel:+18778810087`}>
               Call us
             </a>
         </div>

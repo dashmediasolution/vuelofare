@@ -40,7 +40,8 @@ export default function Navbar() {
                 </Link>      
 
                 <Link
-                    href="tel:+919667301134"
+                    href="tel:+18778810087
+"
                     className="
                      
                     items-center
@@ -71,7 +72,7 @@ export default function Navbar() {
                     </span>
 
                     <span className="font-sans hidden md:flex text-[1.1rem] font-semibold tracking-[1px]">
-                        +91 96673 01134
+                    +1 (877) 881-0087
                     </span>
                 </Link>
 

@@ -35,7 +35,7 @@ export default function HeroSection() {
                     {/* CTA */}
                     <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                         <a
-                            href="tel:+919667301134"
+                            href="tel:+18778810087"
                             className="flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-[#079a91] px-6 text-sm font-bold text-white shadow-sm transition-all hover:bg-[#078a82] hover:shadow-md"
                         >
                             <Phone
