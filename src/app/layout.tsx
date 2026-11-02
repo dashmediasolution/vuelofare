@@ -2,13 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import LiveChatWidget from "./_components/LiveChatWidget";
 import "./globals.css";
 
-import Navbar from "./_components/Navbar";
-import Footer from "./_components/Footer";
-import MobileCallButton from "./_components/MobileCallButton";
 import SiteChrome from "./SiteChrome";
+
 const geist = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Get expert assistance with flight infromation , baggage information, travel planning, itineraries, and travel support.",
+    "Get expert assistance with flight information, baggage information, travel planning, itineraries, and travel support.",
 
   applicationName: SITE_NAME,
 
@@ -73,9 +70,9 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "/",
     siteName: SITE_NAME,
-    title: "Vuelofare.com | Flight  & Travel Assistance",
+    title: "Vuelofare.com | Flight & Travel Assistance",
     description:
-      "Get expert assistance with flight ,  baggage information, travel planning, and travel support.",
+      "Get expert assistance with flights, baggage information, travel planning, and travel support.",
     images: [
       {
         url: "/images/og-image.jpg",
@@ -90,7 +87,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vuelofare | Flight & Travel Assistance",
     description:
-      "Expert assistance for flight infromation ,  travel planning, and travel support.",
+      "Expert assistance for flight information, travel planning, and travel support.",
     images: ["/images/og-image.jpg"],
   },
 
@@ -108,7 +105,6 @@ export const viewport: Viewport = {
   viewportFit: "cover",
   themeColor: "#159b9c",
 };
-
 
 export default function RootLayout({
   children,
@@ -148,46 +144,12 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Navbar */}
-        <div className="site-navbar sticky top-0 z-50 w-full">
-          <Navbar />
-        </div>
-
-        {/* Page Content */}
-        <main className="min-h-screen">
-        <SiteChrome>
-          {children}
-        </SiteChrome>
-
-          <div className="site-floating-widgets">
-            <LiveChatWidget />
-            <MobileCallButton />
-          </div>
-        </main>
-
-        {/* Footer */}
-        <div className="site-footer">
-          <Footer />
-        </div>
+        {/* Single Site Chrome */}
+        <SiteChrome>{children}</SiteChrome>
 
         {/* Google Analytics */}
         <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
-
-        {/* Hide website elements on searching page */}
-        <style>{`
-          body:has([data-searching-page]) .site-navbar,
-          body:has([data-searching-page]) .site-footer,
-          body:has([data-searching-page]) .site-floating-widgets {
-            display: none !important;
-          }
-
-          body:has([data-searching-page]) {
-            margin: 0;
-            padding: 0;
-          }
-        `}</style>
       </body>
     </html>
   );
 }
-
