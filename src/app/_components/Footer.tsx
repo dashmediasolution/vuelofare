@@ -140,9 +140,8 @@ export default function Footer() {
                 Have a question? Get in touch with our team.
             </p>
 
-            <Link
-                href="tel:+919667301134"
-                aria-label="Call Vuelofare at +91 96673 01134"
+            <div
+                 aria-label="Call Vuelofare at +91 96673 01134"
                 className="mt-4 inline-flex max-w-full items-center gap-2 rounded-xl bg-[#e8f7f6] px-3 py-3 font-semibold text-[#073452] transition-colors hover:bg-[#d9f0ee]"
             >
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#159b9c]">
@@ -157,7 +156,7 @@ export default function Footer() {
                         +91 96673 01134
                     </span>
                 </span>
-            </Link>
+            </div>
 
             <p className="mt-3 text-sm font-medium text-[#8ba0ac]">
                 Mon – Sun, 24/7
