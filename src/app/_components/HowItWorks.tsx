@@ -1,10 +1,10 @@
+
 "use client";
 
 import {
+    Search,
     Headphones,
-    Plane,
-    Phone,
-    UserRound,
+    TicketCheck,
 } from "lucide-react";
 
 interface HowItWorksStep {
@@ -15,22 +15,22 @@ interface HowItWorksStep {
 
 const steps: HowItWorksStep[] = [
     {
-        title: "Reach Out",
+        title: "Search Flights Online",
         description:
-            "Call +91 96673 01134 or connect with our travel specialists and speak with someone right away.",
-        icon: <Phone size={24} strokeWidth={2.2} />,
+            "Explore flight options, compare fares, and find a flight that matches your travel plans.",
+        icon: <Search size={24} strokeWidth={2.2} />,
     },
     {
-        title: "Get Expert Assistance",
+        title: "Customize & Book with a Specialist",
         description:
-            "Share your needs and let us handle the details with care.",
-        icon: <UserRound size={24} strokeWidth={2.2} />,
+            "Connect with our travel specialists through live chat or phone for personalized booking assistance.",
+        icon: <Headphones size={24} strokeWidth={2.2} />,
     },
     {
-        title: "Travel with Confidence",
+        title: "Receive Your E-Ticket",
         description:
-            "Relax knowing your trip is in expert hands.",
-        icon: <Plane size={24} strokeWidth={2.2} />,
+            "Complete your booking and receive your electronic ticket with all your travel details.",
+        icon: <TicketCheck size={24} strokeWidth={2.2} />,
     },
 ];
 
@@ -75,7 +75,7 @@ export default function HowItWorks() {
                                 lg:text-[42px]
                             "
                         >
-                            Get help in 3 simple steps.
+                            Book your flight in 3 simple steps.
                         </h2>
 
                         <p
@@ -89,8 +89,9 @@ export default function HowItWorks() {
                                 sm:text-[16px]
                             "
                         >
-                            Connecting with a travel specialist is quick,
-                            easy, and completely hassle-free.
+                            Search flights online, get personalized
+                            assistance from our specialists, and
+                            receive your e-ticket with ease.
                         </p>
                     </div>
 

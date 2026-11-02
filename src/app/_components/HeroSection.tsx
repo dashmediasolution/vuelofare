@@ -29,7 +29,7 @@ export default function HeroSection() {
 
                     {/* Description */}
                     <p className="mt-5 max-w-[470px] text-[14px] leading-[1.3] text-[#658399] sm:text-[15px] md:text-[1.1rem]">
-                        Our specialists help you sort out the details and travel with confidence.
+                      Our travel experts assist you with every detail, making your travel planning simple and stress-free.
                     </p>
 
                     {/* CTA */}
@@ -83,7 +83,7 @@ export default function HeroSection() {
                             </p>
 
                             <p className="mt-0.5 text-xs text-[#8aa0ad] sm:text-[8px] md:text-xs">
-                                Real people. Real help.
+                                Personalized Flight Booking Assistance
                             </p>
                         </div>
                     </div>

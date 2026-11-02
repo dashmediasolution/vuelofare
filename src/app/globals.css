@@ -128,3 +128,25 @@
     @apply font-sans;
   }
 }
+
+
+/* Vuelofare Airline Infinite Carousel */
+
+
+/* Vuelofare Airline Carousel */
+
+.embla__container {
+    display: flex;
+}
+
+.embla__slide {
+    flex: 0 0 auto;
+    min-width: 0;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .embla__container {
+        animation: none;
+    }
+}

@@ -1,13 +1,14 @@
- import type { Metadata, Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import LiveChatWidget from "./_components/LiveChatWidget";
 import "./globals.css";
 
 import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
 import MobileCallButton from "./_components/MobileCallButton";
-
+import SiteChrome from "./SiteChrome";
 const geist = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,7 +22,7 @@ const SITE_NAME = "Vuelofare";
 
 const GOOGLE_ADS_ID = "AW-18507429014";
 const GA_MEASUREMENT_ID = "G-0PTZER082F";
-const PHONE_CONVERSION_ID ="AW-18507429014/02XMCOX_w5sdEJbpg_lE";
+const PHONE_CONVERSION_ID = "AW-18507429014/02XMCOX_w5sdEJbpg_lE";
 const PHONE_CONVERSION_NUMBER = "(877) 881-0087";
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
 
   keywords: [
     "travel assistance",
-      "flight information",
+    "flight information",
     "baggage assistance",
     "travel planning",
     "international flights",
@@ -108,6 +109,7 @@ export const viewport: Viewport = {
   themeColor: "#159b9c",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -118,7 +120,7 @@ export default function RootLayout({
       <body
         className={`${geist.variable} min-h-screen bg-white antialiased`}
       >
-        {/* Google tag (gtag.js) - Google Ads */}
+        {/* Google Ads */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
           strategy="afterInteractive"
@@ -133,16 +135,12 @@ export default function RootLayout({
             };
 
             window.gtag('js', new Date());
-
             window.gtag('config', '${GOOGLE_ADS_ID}');
           `}
         </Script>
 
-        {/* Google Ads - Phone Call Conversion Tracking */}
-        <Script
-          id="google-phone-conversion"
-          strategy="afterInteractive"
-        >
+        {/* Google Ads Phone Conversion */}
+        <Script id="google-phone-conversion" strategy="afterInteractive">
           {`
             window.gtag('config', '${PHONE_CONVERSION_ID}', {
               phone_conversion_number: '${PHONE_CONVERSION_NUMBER}'
@@ -150,36 +148,46 @@ export default function RootLayout({
           `}
         </Script>
 
-{/* Sticky Disclaimer + Navbar */}
-<div className="sticky top-0 z-50 w-full">
-  {/* Disclaimer */}
-  <div className="border-y border-[#dcebea] bg-[#eaf7f6] px-3 py-2 sm:px-5 sm:py-3">
-    <p className="mx-auto max-w-[1280px] text-center text-[11px] leading-4 text-[#355c68] sm:text-sm sm:leading-5">
-      <strong className="font-bold text-[#073452]">
-        Disclaimer:
-      </strong>{" "}
-      Vuelofare is an independent, third-party travel agency
-      and is not directly affiliated with, authorized by, or
-      endorsed by any specific airline.
-    </p>
-  </div>
+        {/* Navbar */}
+        <div className="site-navbar sticky top-0 z-50 w-full">
+          <Navbar />
+        </div>
 
-  {/* Navbar */}
-  <Navbar />
-</div>
+        {/* Page Content */}
+        <main className="min-h-screen">
+        <SiteChrome>
+          {children}
+        </SiteChrome>
 
-<main className="min-h-screen">
-  {children}
-  <MobileCallButton />
-</main>
+          <div className="site-floating-widgets">
+            <LiveChatWidget />
+            <MobileCallButton />
+          </div>
+        </main>
 
-<Footer />
+        {/* Footer */}
+        <div className="site-footer">
+          <Footer />
+        </div>
 
-
-        {/* Google tag (gtag.js) - Google Analytics 4 (GA4) */}
+        {/* Google Analytics */}
         <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
+
+        {/* Hide website elements on searching page */}
+        <style>{`
+          body:has([data-searching-page]) .site-navbar,
+          body:has([data-searching-page]) .site-footer,
+          body:has([data-searching-page]) .site-floating-widgets {
+            display: none !important;
+          }
+
+          body:has([data-searching-page]) {
+            margin: 0;
+            padding: 0;
+          }
+        `}</style>
       </body>
     </html>
   );
 }
- 
+

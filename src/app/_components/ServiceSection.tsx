@@ -31,7 +31,7 @@ const services: Service[] = [
   
   {
     slug: "flight-changes",
-    title: "Your Journey, Simplified.",
+    title: "Flexible Travel Options.",
     description:
         "Explore your options and get information to plan your next steps with confidence.",
     icon: <RefreshCw size={22} strokeWidth={2.2} />,
@@ -155,7 +155,7 @@ export default function ServicesSection() {
                             {/* Text */}
                             <div>
                                 <p className="text-[16px] font-bold leading-tight text-[#102d5b] sm:text-[17px]">
-                                    Real people. Real help.
+                                   	Speak with a Travel Specialist 24/7.
                                 </p>
 
                                 <p className="mt-1 text-[12px] font-medium leading-[1.4] text-[#8091a8] sm:text-[13px]">
