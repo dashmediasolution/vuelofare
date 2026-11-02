@@ -40,7 +40,7 @@ export default function Navbar() {
                 </Link>      
 
                 <Link
-                    href="tel:+1877881-0087"
+                    href="tel:+18778810087"
                     className="
                      
                     items-center
