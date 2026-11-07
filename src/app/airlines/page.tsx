@@ -225,8 +225,8 @@ export default function AmericanAirlinesPage() {
                 Travel Agency
             </span>
 
-            <h1 className="mx-auto mt-5 max-w-3xl text-[27px] font-extrabold leading-[1.2] tracking-tight text-[#073452] sm:text-4xl lg:text-5xl">
-               Airlines Flight Tickets - Booking Assistance by
+            <h1 className="mx-auto mt-5 max-w-3xl text-[27px] font-extrabold leading-[1.2] tracking-tight text-[#073452] sm:text-4xl lg:text-4xl">
+              American Airlines Flight Tickets - Booking Assistance by
               Vuelofare.com Travel Agency
             </h1>
 
