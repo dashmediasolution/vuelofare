@@ -14,8 +14,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
-const SUPPORT_PHONE = "+18778810087";
-const DISPLAY_PHONE = "(877) 881-0087";
+const SUPPORT_PHONE = "+18339041682";
+const DISPLAY_PHONE = "(833) 904-1582";
 import CTASection from "../_components/CTASection";
 export const metadata: Metadata = {
   title: "Delta Air Lines Tickets & Booking Assistance",

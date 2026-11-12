@@ -14,10 +14,10 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
-const SUPPORT_PHONE = "+18778810087";
-const DISPLAY_PHONE = "(877) 881-0087";
+const SUPPORT_PHONE = "+18338041499";
+const DISPLAY_PHONE = "(833) 804-1499";
 import CTASection from "../_components/CTASection";
-
+import FlightSearchBar from "../_components/FlightSearchBar";
 export const metadata: Metadata = {
   title: "United Airlines Tickets & Booking Assistance",
   description:
@@ -182,9 +182,7 @@ export default function DeltaAirlinesPage() {
     </div>
   </div>
 </section>
-
-
-      {/* Services */}
+       {/* Services */}
       <section className="relative py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-8">
 

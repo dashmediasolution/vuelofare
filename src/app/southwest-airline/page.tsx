@@ -14,8 +14,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
-const SUPPORT_PHONE = "+18778810087";
-const DISPLAY_PHONE = "(877) 881-0087";
+const SUPPORT_PHONE = "+18337544023";
+const DISPLAY_PHONE = "(833) 754-4023";
 import CTASection from "../_components/CTASection";
 
 export const metadata: Metadata = {

@@ -1,8 +1,10 @@
+
 "use client";
 
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, MapPin, ShieldCheck, Building2 } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { Phone, MapPin, ShieldCheck } from "lucide-react";
 
 const quickLinks = [
     { label: "About Us", href: "/about-us" },
@@ -12,14 +14,25 @@ const quickLinks = [
     { label: "Refund Policy", href: "/refund-policy" },
     { label: "American Airline", href: "/american-airline" },
     { label: "Delta Airline", href: "/delta-airline" },
-    { label: "United Airline", href: "/United-airline" },
-    { label: "Southwest  Airline", href: "/southwest-airline" },
+    { label: "United Airline", href: "/united-airline" },
+    { label: "Southwest Airline", href: "/southwest-airline" },
+];
+
+const hideCallUsPages = [
+    "/american-airline",
+    "/united-airline",
+    "/delta-airline",
+    "/southwest-airline",
 ];
 
 export default function Footer() {
+    const pathname = usePathname();
+
+    const hideCallUs = hideCallUsPages.includes(pathname);
+
     return (
         <footer className="relative mb-15 w-full bg-[#F9FCFC] text-[#15546A] md:mb-0">
-            {/* Main Footer */}
+
             {/* Main Footer */}
             <div className="mx-auto max-w-[1440px] px-5 py-10 sm:px-8 sm:py-12 lg:px-10 lg:py-14">
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5 lg:gap-6">
@@ -105,6 +118,7 @@ export default function Footer() {
                                 </span>
                                 07AAVFJ7547C1ZY
                             </p>
+
                             <p className="break-words text-[#718b9b]">
                                 <span className="block font-semibold text-[#355c68]">
                                     PAN Number
@@ -144,31 +158,37 @@ export default function Footer() {
                             Have a question? Get in touch with our team.
                         </p>
 
-                        <div
-                            aria-label="Call Vuelofare at +91 96673 01134"
-                            className="mt-4 inline-flex max-w-full items-center gap-2 rounded-xl bg-[#e8f7f6] px-3 py-3 font-semibold text-[#073452] transition-colors hover:bg-[#d9f0ee]"
-                        >
-                            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#159b9c]">
-                                <Phone size={18} aria-hidden="true" />
-                            </span>
+                        {/* Hide Call Us on Airline Pages */}
+                        {!hideCallUs && (
+                            <>
+                                <div
+                                    aria-label="Call Vuelofare at +91 96673 01134"
+                                    className="mt-4 inline-flex max-w-full items-center gap-2 rounded-xl bg-[#e8f7f6] px-3 py-3 font-semibold text-[#073452] transition-colors hover:bg-[#d9f0ee]"
+                                >
+                                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#159b9c]">
+                                        <Phone size={18} aria-hidden="true" />
+                                    </span>
 
-                            <span className="min-w-0">
-                                <span className="block text-xs font-medium text-[#718b9b]">
-                                    Call Us
-                                </span>
-                                <span className="block break-words text-sm font-semibold">
-                                    +91 96673 01134
-                                </span>
-                            </span>
-                        </div>
+                                    <span className="min-w-0">
+                                        <span className="block text-xs font-medium text-[#718b9b]">
+                                            Call Us
+                                        </span>
+                                        <span className="block break-words text-sm font-semibold">
+                                            +91 96673 01134
+                                        </span>
+                                    </span>
+                                </div>
 
-                        <p className="mt-3 text-sm font-medium text-[#8ba0ac]">
-                            Mon – Sun, 24/7
-                        </p>
+                                <p className="mt-3 text-sm font-medium text-[#8ba0ac]">
+                                    Mon – Sun, 24/7
+                                </p>
+                            </>
+                        )}
                     </div>
 
                 </div>
             </div>
+
             {/* Affiliation Disclaimer */}
             <div className="border-y border-[#dcebea] bg-[#eaf7f6] px-5 py-5 sm:px-8">
                 <div className="mx-auto flex max-w-[1150px] items-start gap-3">
@@ -202,7 +222,7 @@ export default function Footer() {
                     </p>
                 </div>
             </div>
+
         </footer>
     );
 }
-
