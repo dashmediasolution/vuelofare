@@ -234,9 +234,11 @@ export default function CTASection() {
                             </p>
                         </div>
 
-                        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#18b9ad] text-white">
+                         <Link
+                            href="tel:+18778810087"
+                             className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#18b9ad] text-white">
                             <Phone size={16} />
-                        </span>
+                        </Link>
                     </div>
                 </div>
             </div>
