@@ -27,34 +27,32 @@ export default function ContactUsPage() {
           <h2 className="font-bold text-slate-900">Phone</h2>
           <p className="mt-2 text-lg text-slate-600">{"  +1 (877) 881-0087"}
           </p>
-
-          <a className="mt-3 inline-block text-base font-bold text-[#087f81] underline" href={`tel:+18778810087`}>
-            Call us
-          </a>
+        
+            <a className="mt-3 inline-block text-base font-bold text-[#087f81] underline" href={`tel:+18778810087`}>
+              Call us
+            </a>
         </div>
         <div className="rounded-xl border border-slate-200 p-5">
           <MapPin className="mb-3 text-[#159b9c]" size={24} />
           <h2 className="font-bold text-slate-900">Business address</h2>
           <p className="mt-2 text-base leading-6 text-slate-600">
-            {
-              "20 W 34th St New York, NY 10001 United States"
-            }
-          </p></div>
+            {"B-16 S/F R/Side, Janakpuri Community Centre, Janakpuri, New Delhi – 110058"}
+            </p></div>
       </div>
       <LegalSection title="Before you contact us">
-        <p>
-          Describe your question clearly and include a reference number only if
-          one has been provided to you. Do not send passwords, full payment-card
-          details, one-time codes, or unnecessary sensitive personal information.
-        </p>
+       <p>
+    Describe your question clearly and include a reference number only if
+    one has been provided to you. Do not send passwords, full payment-card
+    details, one-time codes, or unnecessary sensitive personal information.
+</p>
 
-        <p>
-          If your question concerns travel arrangements made directly with an
-          airline, hotel, or another travel provider, Vuelofare cannot be assumed
-          to control reservations or transactions handled by another company.
-        </p>
+<p>
+    If your question concerns travel arrangements made directly with an
+    airline, hotel, or another travel provider, Vuelofare cannot be assumed
+    to control reservations or transactions handled by another company.
+</p>
 
-      </LegalSection>
+               </LegalSection>
 
     </LegalPageLayout>
   );

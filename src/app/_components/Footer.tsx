@@ -12,7 +12,6 @@ const quickLinks = [
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms & Conditions", href: "/terms-and-conditions" },
     { label: "Refund Policy", href: "/refund-policy" },
-
 ];
 
 const hideCallUsPages = [
@@ -21,6 +20,8 @@ const hideCallUsPages = [
     "/delta-airline",
     "/southwest-airline",
 ];
+
+const usAddress = "20 W 34th St, New York, NY 10001, United States";
 
 export default function Footer() {
     const pathname = usePathname();
@@ -70,11 +71,8 @@ export default function Footer() {
 
                             <div className="min-w-0">
                                 <p className="break-words text-sm font-medium leading-6 text-[#718b9b]">
-                                    20 W 34th St
-
-                                    New York, NY 10001
-
-                                    United States
+                                    B-16 S/F R/Side, Janakpuri Community Centre,
+                                    Janakpuri, New Delhi – 110058
                                 </p>
 
                                 <p className="mt-3 text-sm font-medium text-[#718b9b]">
@@ -154,13 +152,30 @@ export default function Footer() {
                             Contact
                         </h3>
 
-                        <p className="mt-4 text-sm leading-6 text-[#718b9b]">
-                            Have a question? Get in touch with our team.
-                        </p>
-
-                        {/* Hide Call Us on Airline Pages */}
-                        {!hideCallUs && (
+                        {hideCallUs ? (
                             <>
+                                <p className="mt-4 text-sm leading-6 text-[#718b9b]">
+                                    Our location:
+                                </p>
+
+                                <div className="mt-4 flex items-start gap-2">
+                                    <MapPin
+                                        size={20}
+                                        className="mt-1 shrink-0 text-[#159b9c]"
+                                        aria-hidden="true"
+                                    />
+
+                                    <p className="break-words text-sm font-medium leading-6 text-[#718b9b]">
+                                        {usAddress}
+                                    </p>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <p className="mt-4 text-sm leading-6 text-[#718b9b]">
+                                    Have a question? Get in touch with our team.
+                                </p>
+
                                 <div
                                     aria-label="Call Vuelofare at +91 96673 01134"
                                     className="mt-4 inline-flex max-w-full items-center gap-2 rounded-xl bg-[#e8f7f6] px-3 py-3 font-semibold text-[#073452] transition-colors hover:bg-[#d9f0ee]"
@@ -208,7 +223,7 @@ export default function Footer() {
                                 VueloFare is an independent third-party travel agency.
                                 We are not affiliated with, endorsed by, or acting on
                                 behalf of American Airlines, Delta Airlines, United
-                                Airlines, Southwest Airlines. Service fees may apply.
+                                Airlines, or Southwest Airlines. Service fees may apply.
                             </>
                         ) : (
                             <>
