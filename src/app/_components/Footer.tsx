@@ -20,13 +20,39 @@ const hideCallUsPages = [
     "/delta-airline",
     "/southwest-airline",
 ];
+const phoneNumbers: Record<string, {
+    support: string;
+    display: string;
+}> = {
+    "/american-airline": {
+        support: "+18778810087",
+        display: "+1 (877) 881-0087",
+    },
+    "/delta-airline": {
+        support: "+18339041682",
+        display: "+1 (833) 904-1682",
+    },
+    "/southwest-airline": {
+        support: "+18337544023",
+        display: "+1 (833) 754-4023",
+    },
+    "/united-airline": {
+        support: "+18338041499",
+        display: "+1 (833) 804-1499",
+    },
+};
+const indiaAddress =
+    "B-16 S/F R/Side, Janakpuri Community Centre, Janakpuri, New Delhi – 110058";
 
-const usAddress = "20 W 34th St, New York, NY 10001, United States";
+const usAddress =
+    "20 W 34th St, New York, NY 10001, United States";
 
 export default function Footer() {
     const pathname = usePathname();
-
+const currentPhone = phoneNumbers[pathname];
     const hideCallUs = hideCallUsPages.includes(pathname);
+
+    const currentAddress = hideCallUs ? usAddress : indiaAddress;
 
     return (
         <footer className="relative mb-15 w-full bg-[#F9FCFC] text-[#15546A] md:mb-0">
@@ -69,17 +95,16 @@ export default function Footer() {
                                 aria-hidden="true"
                             />
 
-                            <div className="min-w-0">
-                                <p className="break-words text-sm font-medium leading-6 text-[#718b9b]">
-                                    B-16 S/F R/Side, Janakpuri Community Centre,
-                                    Janakpuri, New Delhi – 110058
-                                </p>
-
-                                <p className="mt-3 text-sm font-medium text-[#718b9b]">
-                                    Operated by JS Enterprises
-                                </p>
-                            </div>
+                            <p className="break-words text-sm font-medium leading-6 text-[#718b9b]">
+                                {currentAddress}
+                            </p>
                         </div>
+
+                        {!hideCallUs && (
+                            <p className="mt-3 text-sm font-medium text-[#718b9b]">
+                                Operated by JS Enterprises
+                            </p>
+                        )}
                     </div>
 
                     {/* Business Information */}
@@ -89,6 +114,7 @@ export default function Footer() {
                         </h3>
 
                         <div className="mt-4 space-y-3 text-sm leading-6">
+
                             <p className="break-words text-[#718b9b]">
                                 <span className="block font-semibold text-[#355c68]">
                                     Parent Company
@@ -123,6 +149,7 @@ export default function Footer() {
                                 </span>
                                 AAVFJ7547C
                             </p>
+
                         </div>
                     </div>
 
@@ -147,59 +174,42 @@ export default function Footer() {
                     </div>
 
                     {/* Contact */}
-                    <div className="min-w-0">
-                        <h3 className="text-lg font-bold text-[#073452]">
-                            Contact
-                        </h3>
+                    {/* Contact */}
+{hideCallUs && currentPhone && (
+    <div className="min-w-0">
+        <h3 className="text-lg font-bold text-[#073452]">
+            Contact
+        </h3>
 
-                        {hideCallUs ? (
-                            <>
-                                <p className="mt-4 text-sm leading-6 text-[#718b9b]">
-                                    Our location:
-                                </p>
+        <p className="mt-4 text-sm leading-6 text-[#718b9b]">
+            Have a question? Get in touch with our team.
+        </p>
 
-                                <div className="mt-4 flex items-start gap-2">
-                                    <MapPin
-                                        size={20}
-                                        className="mt-1 shrink-0 text-[#159b9c]"
-                                        aria-hidden="true"
-                                    />
+        <a
+            href={`tel:${currentPhone.support}`}
+            aria-label={`Call Vuelofare at ${currentPhone.display}`}
+            className="mt-4 inline-flex max-w-full items-center gap-2 rounded-xl bg-[#e8f7f6] px-3 py-3 font-semibold text-[#073452] transition-colors hover:bg-[#d9f0ee]"
+        >
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#159b9c]">
+                <Phone size={18} aria-hidden="true" />
+            </span>
 
-                                    <p className="break-words text-sm font-medium leading-6 text-[#718b9b]">
-                                        {usAddress}
-                                    </p>
-                                </div>
-                            </>
-                        ) : (
-                            <>
-                                <p className="mt-4 text-sm leading-6 text-[#718b9b]">
-                                    Have a question? Get in touch with our team.
-                                </p>
+            <span className="min-w-0">
+                <span className="block text-xs font-medium text-[#718b9b]">
+                    Call Us
+                </span>
 
-                                <div
-                                    aria-label="Call Vuelofare at +91 96673 01134"
-                                    className="mt-4 inline-flex max-w-full items-center gap-2 rounded-xl bg-[#e8f7f6] px-3 py-3 font-semibold text-[#073452] transition-colors hover:bg-[#d9f0ee]"
-                                >
-                                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#159b9c]">
-                                        <Phone size={18} aria-hidden="true" />
-                                    </span>
+                <span className="block break-words text-sm font-semibold">
+                    {currentPhone.display}
+                </span>
+            </span>
+        </a>
 
-                                    <span className="min-w-0">
-                                        <span className="block text-xs font-medium text-[#718b9b]">
-                                            Call Us
-                                        </span>
-                                        <span className="block break-words text-sm font-semibold">
-                                            +91 96673 01134
-                                        </span>
-                                    </span>
-                                </div>
-
-                                <p className="mt-3 text-sm font-medium text-[#8ba0ac]">
-                                    Mon – Sun, 24/7
-                                </p>
-                            </>
-                        )}
-                    </div>
+        <p className="mt-3 text-sm font-medium text-[#8ba0ac]">
+            Mon – Sun, 24/7
+        </p>
+    </div>
+)}
 
                 </div>
             </div>
@@ -220,7 +230,7 @@ export default function Footer() {
 
                         {hideCallUs ? (
                             <>
-                                VueloFare is an independent third-party travel agency.
+                                Vuelofare is an independent third-party travel agency.
                                 We are not affiliated with, endorsed by, or acting on
                                 behalf of American Airlines, Delta Airlines, United
                                 Airlines, or Southwest Airlines. Service fees may apply.
@@ -240,6 +250,7 @@ export default function Footer() {
             {/* Bottom Bar */}
             <div className="border-t border-[#e7eeee]">
                 <div className="mx-auto flex w-full max-w-[1280px] flex-col gap-2 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-12">
+
                     <p className="text-sm font-medium text-[#8ba0ac] sm:text-base">
                         © 2026 Vuelofare. All rights reserved.
                     </p>
@@ -247,6 +258,7 @@ export default function Footer() {
                     <p className="text-sm font-medium text-[#8ba0ac] sm:text-base">
                         Travel smarter. With people who care.
                     </p>
+
                 </div>
             </div>
 
