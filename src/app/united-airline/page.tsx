@@ -13,7 +13,7 @@ import {
   ShieldCheck,
   ArrowRight,
 } from "lucide-react";
-import Image from "next/image";  
+import Script from "next/script";
 import type { Metadata } from "next";
 const SUPPORT_PHONE = "+18338041499";
 const DISPLAY_PHONE = "+1 (833) 804-1499";
@@ -84,8 +84,32 @@ const trustItems = [
 
  
 
-export default function DeltaAirlinesPage() {
+export default function UnitedAirlinesPage() {
   return (
+       <>
+      {/* Google Tag */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-0PTZER082F"
+        strategy="afterInteractive"
+      />
+
+      {/* Google Tag Configuration */}
+      <Script id="united-google-tags-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          window.gtag = gtag;
+
+          gtag('js', new Date());
+
+          gtag('config', 'G-0PTZER082F');
+          gtag('config', 'AW-18507429014');
+
+          gtag('config', 'AW-18507429014/FmfqCKmV-bcdEJbpg_lE', {
+            'phone_conversion_number': '+1 (833) 804-1499'
+          });
+        `}
+      </Script>
        <main className="min-h-screen overflow-hidden bg-white text-[#073452]">
     
           {/* HERO */}
@@ -378,5 +402,6 @@ export default function DeltaAirlinesPage() {
                   </div>
                 </section>
         </main>
+        </>
   );
 }

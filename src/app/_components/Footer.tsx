@@ -12,6 +12,11 @@ const quickLinks = [
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms & Conditions", href: "/terms-and-conditions" },
     { label: "Refund Policy", href: "/refund-policy" },
+    // Airline Pages
+    { label: "American Airlines", href: "/american-airline" },
+    { label: "United Airlines", href: "/united-airline" },
+    { label: "Delta Airlines", href: "/delta-airline" },
+    { label: "Southwest Airlines", href: "/southwest-airline" },
 ];
 
 const hideCallUsPages = [
@@ -49,7 +54,7 @@ const usAddress =
 
 export default function Footer() {
     const pathname = usePathname();
-const currentPhone = phoneNumbers[pathname];
+    const currentPhone = phoneNumbers[pathname];
     const hideCallUs = hideCallUsPages.includes(pathname);
 
     const currentAddress = hideCallUs ? usAddress : indiaAddress;
@@ -154,62 +159,65 @@ const currentPhone = phoneNumbers[pathname];
                     </div>
 
                     {/* Legal */}
+                    {/* Legal / Quick Links */}
                     <div className="min-w-0">
                         <h3 className="text-lg font-bold text-[#073452]">
                             Legal
                         </h3>
 
                         <ul className="mt-4 flex flex-col items-start gap-2.5">
-                            {quickLinks.map((link) => (
-                                <li key={link.href}>
-                                    <Link
-                                        href={link.href}
-                                        className="break-words text-sm font-medium text-[#718b9b] transition-colors hover:text-[#159b9c]"
-                                    >
-                                        {link.label}
-                                    </Link>
-                                </li>
-                            ))}
+                            {quickLinks
+                                .filter((link) => !hideCallUs || !hideCallUsPages.includes(link.href))
+                                .map((link) => (
+                                    <li key={link.href}>
+                                        <Link
+                                            href={link.href}
+                                            className="break-words text-sm font-medium text-[#718b9b] transition-colors hover:text-[#159b9c]"
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    </li>
+                                ))}
                         </ul>
                     </div>
 
                     {/* Contact */}
                     {/* Contact */}
-{hideCallUs && currentPhone && (
-    <div className="min-w-0">
-        <h3 className="text-lg font-bold text-[#073452]">
-            Contact
-        </h3>
+                    {hideCallUs && currentPhone && (
+                        <div className="min-w-0">
+                            <h3 className="text-lg font-bold text-[#073452]">
+                                Contact
+                            </h3>
 
-        <p className="mt-4 text-sm leading-6 text-[#718b9b]">
-            Have a question? Get in touch with our team.
-        </p>
+                            <p className="mt-4 text-sm leading-6 text-[#718b9b]">
+                                Have a question? Get in touch with our team.
+                            </p>
 
-        <a
-            href={`tel:${currentPhone.support}`}
-            aria-label={`Call Vuelofare at ${currentPhone.display}`}
-            className="mt-4 inline-flex max-w-full items-center gap-2 rounded-xl bg-[#e8f7f6] px-3 py-3 font-semibold text-[#073452] transition-colors hover:bg-[#d9f0ee]"
-        >
-            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#159b9c]">
-                <Phone size={18} aria-hidden="true" />
-            </span>
+                            <a
+                                href={`tel:${currentPhone.support}`}
+                                aria-label={`Call Vuelofare at ${currentPhone.display}`}
+                                className="mt-4 inline-flex max-w-full items-center gap-2 rounded-xl bg-[#e8f7f6] px-3 py-3 font-semibold text-[#073452] transition-colors hover:bg-[#d9f0ee]"
+                            >
+                                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-[#159b9c]">
+                                    <Phone size={18} aria-hidden="true" />
+                                </span>
 
-            <span className="min-w-0">
-                <span className="block text-xs font-medium text-[#718b9b]">
-                    Call Us
-                </span>
+                                <span className="min-w-0">
+                                    <span className="block text-xs font-medium text-[#718b9b]">
+                                        Call Us
+                                    </span>
 
-                <span className="block break-words text-sm font-semibold">
-                    {currentPhone.display}
-                </span>
-            </span>
-        </a>
+                                    <span className="block break-words text-sm font-semibold">
+                                        {currentPhone.display}
+                                    </span>
+                                </span>
+                            </a>
 
-        <p className="mt-3 text-sm font-medium text-[#8ba0ac]">
-            Mon – Sun, 24/7
-        </p>
-    </div>
-)}
+                            <p className="mt-3 text-sm font-medium text-[#8ba0ac]">
+                                Mon – Sun, 24/7
+                            </p>
+                        </div>
+                    )}
 
                 </div>
             </div>

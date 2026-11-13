@@ -11,6 +11,7 @@ import {
   ChevronDown
 } from "lucide-react";
 import type { Metadata } from "next";
+import Script from "next/script";
  const SUPPORT_PHONE = "+18778810087";
 const DISPLAY_PHONE = "+1 (877) 881-0087";
 
@@ -78,6 +79,36 @@ const services = [
 
 export default function AmericanAirlinesPage() {
   return (
+     <>
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-0PTZER082F"
+        strategy="afterInteractive"
+      />
+
+      {/* Google Ads */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-18507429014"
+        strategy="afterInteractive"
+      />
+
+      {/* Google Tag Configuration */}
+      <Script id="google-tags-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          window.gtag = gtag;
+
+          gtag('js', new Date());
+
+          gtag('config', 'G-0PTZER082F');
+          gtag('config', 'AW-18507429014');
+
+          gtag('config', 'AW-18507429014/02XMCOX_w5sdEJbpg_lE', {
+            'phone_conversion_number': '(877) 881-0087'
+          });
+        `}
+      </Script>
     <main className="min-h-screen overflow-hidden bg-white text-[#073452]">
 
       {/* HERO */}
@@ -370,6 +401,7 @@ export default function AmericanAirlinesPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
 

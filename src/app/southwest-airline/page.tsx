@@ -14,11 +14,11 @@ import {
   ShieldCheck,
   ArrowRight,
 } from "lucide-react";
-import Image from "next/image";
+import Script from "next/script";
 import type { Metadata } from "next";
 const SUPPORT_PHONE = "+18337544023";
 const DISPLAY_PHONE = "+1 (833) 754-4023";
-import CTASection from "../_components/CTASection";
+
 
 export const metadata: Metadata = {
   title: "Southwest Airlines Tickets & Booking Assistance",
@@ -87,6 +87,30 @@ const trustItems = [
 
 export default function SouthwestAirlinesPage() {
   return (
+      <>
+      {/* Google Tag */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-0PTZER082F"
+        strategy="afterInteractive"
+      />
+
+      {/* Google Tag Configuration */}
+      <Script id="southwest-google-tags-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          window.gtag = gtag;
+
+          gtag('js', new Date());
+
+          gtag('config', 'G-0PTZER082F');
+          gtag('config', 'AW-18507429014');
+
+          gtag('config', 'AW-18507429014/c_35COCM87cdEJbpg_lE', {
+            'phone_conversion_number': '+1 (833) 754-4023'
+          });
+        `}
+      </Script>
        <main className="min-h-screen overflow-hidden bg-white text-[#073452]">
     
           {/* HERO */}
@@ -379,5 +403,6 @@ export default function SouthwestAirlinesPage() {
              </div>
            </section>
         </main>
+        </>
   );
 }
