@@ -141,7 +141,8 @@ export default function CTASection() {
                                 bg-[#18b9ad]
                                 px-6
                                 py-3
-                                text-[19px]
+                                
+                                text-[16px]
                                 font-bold
                                 text-white
                                 transition-all
