@@ -12,10 +12,7 @@ const quickLinks = [
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms & Conditions", href: "/terms-and-conditions" },
     { label: "Refund Policy", href: "/refund-policy" },
-    { label: "American Airline", href: "/american-airline" },
-    { label: "Delta Airline", href: "/delta-airline" },
-    { label: "United Airline", href: "/united-airline" },
-    { label: "Southwest Airline", href: "/southwest-airline" },
+
 ];
 
 const hideCallUsPages = [
@@ -73,8 +70,11 @@ export default function Footer() {
 
                             <div className="min-w-0">
                                 <p className="break-words text-sm font-medium leading-6 text-[#718b9b]">
-                                    B-16 S/F R/Side, Janakpuri Community Centre,
-                                    Janakpuri, New Delhi – 110058
+                                    20 W 34th St
+
+                                    New York, NY 10001
+
+                                    United States
                                 </p>
 
                                 <p className="mt-3 text-sm font-medium text-[#718b9b]">
@@ -190,37 +190,37 @@ export default function Footer() {
             </div>
 
             {/* Affiliation Disclaimer */}
- <div className="border-y border-[#dcebea] bg-[#eaf7f6] px-5 py-5 sm:px-8">
-    <div className="mx-auto flex max-w-[1150px] items-start gap-3">
-        <ShieldCheck
-            size={22}
-            className="mt-0.5 shrink-0 text-[#159b9c]"
-            aria-hidden="true"
-        />
+            <div className="border-y border-[#dcebea] bg-[#eaf7f6] px-5 py-5 sm:px-8">
+                <div className="mx-auto flex max-w-[1150px] items-start gap-3">
+                    <ShieldCheck
+                        size={22}
+                        className="mt-0.5 shrink-0 text-[#159b9c]"
+                        aria-hidden="true"
+                    />
 
-        <p className="text-sm leading-6 text-[#355c68] sm:text-base">
-            <strong className="font-bold text-[#073452]">
-                Disclaimer:
-            </strong>{" "}
+                    <p className="text-sm leading-6 text-[#355c68] sm:text-base">
+                        <strong className="font-bold text-[#073452]">
+                            Disclaimer:
+                        </strong>{" "}
 
-            {hideCallUs ? (
-                <>
-                    VueloFare is an independent third-party travel agency.
-                    We are not affiliated with, endorsed by, or acting on
-                    behalf of American Airlines, Delta Airlines, United
-                    Airlines, Southwest Airlines. Service fees may apply.
-                </>
-            ) : (
-                <>
-                    Vuelofare is an independent, third-party travel agency
-                    and is not directly affiliated with, authorized by, or
-                    endorsed by any specific airline. All airline names
-                    and trademarks belong to their respective owners.
-                </>
-            )}
-        </p>
-    </div>
-</div>
+                        {hideCallUs ? (
+                            <>
+                                VueloFare is an independent third-party travel agency.
+                                We are not affiliated with, endorsed by, or acting on
+                                behalf of American Airlines, Delta Airlines, United
+                                Airlines, Southwest Airlines. Service fees may apply.
+                            </>
+                        ) : (
+                            <>
+                                Vuelofare is an independent, third-party travel agency
+                                and is not directly affiliated with, authorized by, or
+                                endorsed by any specific airline. All airline names
+                                and trademarks belong to their respective owners.
+                            </>
+                        )}
+                    </p>
+                </div>
+            </div>
 
             {/* Bottom Bar */}
             <div className="border-t border-[#e7eeee]">

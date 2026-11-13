@@ -58,13 +58,13 @@ export default function Navbar() {
                 >
                     {isAirlinePage ? (
                         <>
-                            <Phone className="h-3 w-3 shrink-0 text-[#159b9c] sm:hidden" />
+                            <Phone className="h-5 w-5 shrink-0 text-[#159b9c] sm:hidden" />
 
-                            <span className="sm:hidden">
+                            <span className="sm:hidden text-base">
                                 +1 (877) 881-0087
                             </span>
 
-                            <span className="hidden sm:inline">
+                            <span className="hidden sm:inline text-base">
                                 +1 (877) 881-0087
                             </span>
                         </>

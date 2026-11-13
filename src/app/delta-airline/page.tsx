@@ -160,7 +160,7 @@ export default function DeltaAirlinesPage() {
        <section className="bg-white md:hidden px-4 pb-3 pt-2 sm:px-8 sm:pb-8 md:pb-9 lg:pb-11">
          <a
            href={`tel:${SUPPORT_PHONE}`}
-           className="mx-auto flex min-h-[40px] max-w-5xl items-center justify-center gap-2 rounded-lg bg-[#159b9c] px-2 py-2 text-sm font-extrabold text-white shadow-[0_8px_20px_rgba(21,155,156,0.18)] transition hover:bg-[#117f80] sm:min-h-[48px] sm:text-xl md:min-h-[64px] md:rounded-xl md:text-xl lg:min-h-[72px] lg:text-2xl"
+           className="mx-auto flex min-h-[40px] max-w-5xl items-center justify-center gap-2 rounded-lg bg-[#159b9c] px-2  my-2 py-3 text-sm font-extrabold text-white shadow-[0_8px_20px_rgba(21,155,156,0.18)] transition hover:bg-[#117f80] sm:min-h-[48px] sm:text-xl md:min-h-[64px] md:rounded-xl md:text-xl lg:min-h-[72px] lg:text-2xl"
          >
            <Phone size={19} fill="currentColor" className="md:h-6 md:w-6" />
            Call Now {DISPLAY_PHONE}
@@ -373,13 +373,7 @@ export default function DeltaAirlinesPage() {
               booking options, existing reservations, and your travel needs.
             </p>
   
-            <a
-              href={`tel:${SUPPORT_PHONE}`}
-              className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#159b9c] px-7 py-3 text-base font-bold text-white shadow-lg transition hover:bg-[#117f80] sm:text-lg"
-            >
-              <Phone size={20} fill="currentColor" />
-              Call {DISPLAY_PHONE}
-            </a>
+           
   
           </div>
         </section>
