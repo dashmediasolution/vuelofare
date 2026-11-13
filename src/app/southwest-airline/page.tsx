@@ -17,7 +17,7 @@ import {
 import Image from "next/image";
 import type { Metadata } from "next";
 const SUPPORT_PHONE = "+18337544023";
-const DISPLAY_PHONE = "(833) 754-4023";
+const DISPLAY_PHONE = "+1 (833) 754-4023";
 import CTASection from "../_components/CTASection";
 
 export const metadata: Metadata = {

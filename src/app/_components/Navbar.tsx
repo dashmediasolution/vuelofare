@@ -1,4 +1,4 @@
- 
+
 "use client";
 
 import Link from "next/link";
@@ -17,6 +17,33 @@ export default function Navbar() {
     ];
 
     const isAirlinePage = airlinePages.includes(pathname);
+
+    const phoneNumbers: Record<string, {
+        support: string;
+        display: string;
+    }> = {
+        "/american-airline": {
+            support: "+18778810087",
+            display: "+1 (877) 881-0087",
+        },
+        "/delta-airline": {
+            support: "+18339041682",
+            display: "+1 (833) 904-1682",
+        },
+        "/southwest-airline": {
+            support: "+18337544023",
+            display: "+1 (833) 754-4023",
+        },
+        "/united-airline": {
+            support: "+18338041499",
+            display: "+1 (833) 804-1499",
+        },
+    };
+
+    const currentPhone = phoneNumbers[pathname] || {
+        support: "+18778810087",
+        display: "+1 (877) 881-0087",
+    };
 
     return (
         <header className="relative z-10 w-full border-b border-slate-100 bg-white">
@@ -49,7 +76,7 @@ export default function Navbar() {
 
                 {/* Phone Number */}
                 <Link
-                    href="tel:+18778810087"
+                    href={`tel:${currentPhone.support}`}
                     className={
                         isAirlinePage
                             ? "group inline-flex shrink-0 items-center gap-1 text-[10px] font-semibold tracking-tight text-[#073452] sm:gap-2 sm:rounded-full sm:border sm:border-[#079a91]/20 sm:bg-[#079a91] sm:px-5 sm:py-2 sm:text-sm sm:tracking-[0.2px] sm:text-white sm:shadow-[0_4px_14px_rgba(7,154,145,0.18)] sm:transition-all sm:duration-300 sm:hover:-translate-y-0.5 sm:hover:bg-[#078a82] md:text-base"
@@ -61,11 +88,11 @@ export default function Navbar() {
                             <Phone className="h-5 w-5 shrink-0 text-[#159b9c] sm:hidden" />
 
                             <span className="sm:hidden text-base">
-                                +1 (877) 881-0087
+                                {currentPhone.display}
                             </span>
 
                             <span className="hidden sm:inline text-base">
-                                +1 (877) 881-0087
+                                {currentPhone.display}
                             </span>
                         </>
                     ) : (

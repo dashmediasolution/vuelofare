@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
  const SUPPORT_PHONE = "+18778810087";
-const DISPLAY_PHONE = "(877) 881-0087";
+const DISPLAY_PHONE = "+1 (877) 881-0087";
 
 export const metadata: Metadata = {
   title: "American Airlines Tickets & Booking Assistance",

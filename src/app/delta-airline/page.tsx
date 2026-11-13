@@ -18,9 +18,8 @@ import {
 import type { Metadata } from "next";
 import Image from "next/image";
 const SUPPORT_PHONE = "+18339041682";
-const DISPLAY_PHONE = "(833) 904-1582";
-import CTASection from "../_components/CTASection";
-export const metadata: Metadata = {
+const DISPLAY_PHONE = "+1 (833) 904-1682";
+ export const metadata: Metadata = {
   title: "Delta Air Lines Tickets & Booking Assistance",
   description:
     "Need help with Delta Air Lines flights? Contact Vuelofare for assistance with new bookings, flight changes, cancellations, and travel options. Call our travel assistance team today.",

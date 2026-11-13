@@ -16,7 +16,7 @@ import {
 import Image from "next/image";  
 import type { Metadata } from "next";
 const SUPPORT_PHONE = "+18338041499";
-const DISPLAY_PHONE = "(833) 804-1499";
+const DISPLAY_PHONE = "+1 (833) 804-1499";
  
 export const metadata: Metadata = {
   title: "United Airlines Tickets & Booking Assistance",
